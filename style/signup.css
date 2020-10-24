@@ -1,0 +1,179 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+body {
+  background: #fbffbe;
+}
+
+body .main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#db4545), to(#fbffbe));
+  background: linear-gradient(180deg, #db4545, #fbffbe);
+}
+
+body .main .signup {
+  background: #FFFFFF;
+  width: 50%;
+  max-width: 800px;
+  min-width: 400px;
+  margin: 50px auto 30px auto;
+  padding: 10px 0px 40px 0px;
+  border-radius: 15px;
+}
+
+body .main .signup h2 {
+  width: 80%;
+  text-align: left;
+  margin: 30px auto 10px auto;
+}
+
+body .main .signup .header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .main .signup table {
+  width: 80%;
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+body .main .signup table td {
+  padding: 7px 0px;
+  white-space: nowrap;
+}
+
+body .main .signup table input[type="text"], body .main .signup table input[type="tel"], body .main .signup table input[type="email"], body .main .signup table input[type="password"], body .main .signup table input[type="number"] {
+  background: #FFF;
+  width: 90%;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #db4545;
+  font-size: 15px;
+  padding: 10px 7px;
+  display: block;
+}
+
+body .main .signup table input[type="text"]:hover, body .main .signup table input[type="tel"]:hover, body .main .signup table input[type="email"]:hover, body .main .signup table input[type="password"]:hover, body .main .signup table input[type="number"]:hover, body .main .signup table textarea:hover {
+  border-color: #f8b1b1;
+}
+
+body .main .signup table input[type="text"]:focus, body .main .signup table input[type="tel"]:focus, body .main .signup table input[type="email"]:focus, body .main .signup table input[type="password"]:focus, body .main .signup table input[type="number"]:focus, body .main .signup table textarea:focus {
+  border: 1px solid #f8b1b1;
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+  outline: none;
+}
+
+body .main .signup table .correo input {
+  display: inline;
+}
+
+body .main .signup table select {
+  display: block;
+  width: 90%;
+  line-height: 1.3;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #db4545;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+body .main .signup table select option {
+  font-weight: normal;
+  padding: 5px;
+}
+
+body .main .signup table select:hover {
+  border-color: #f8b1b1;
+}
+
+body .main .signup table select:focus {
+  border: 1px solid #f8b1b1;
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+  outline: none;
+}
+
+body .main .signup input[type="submit"] {
+  margin: 20px auto 4px auto;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  background: #db4545;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 35px;
+}
+
+body .main .signup input[type="submit"]:hover {
+  background: #f8b1b1;
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+body .main .signup input[type="submit"]:focus {
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+}
+
+body .main .signup hr {
+  border: 1px solid #db4545;
+  border-radius: 5px;
+  width: 90%;
+}
+
+body .acceder {
+  font-size: 17px;
+}
+
+body .acceder a {
+  color: #db4545;
+  text-decoration: none;
+  margin: 0px 5px;
+}
+
+body .acceder a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  .main .signup table td {
+    width: 90%;
+    display: block;
+    font-size: 18px;
+  }
+  .main .signup table td .correo input {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=signup.css.map */
