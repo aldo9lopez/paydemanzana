@@ -9,6 +9,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+    <script src="js/login-head.js"></script>
+
+<?php
+    require_once("model/usuario/verificar_sesion.php");
+    if(session_status()!=2){
+        session_start();
+    }
+    if(isset($_SESSION["usuario"])){
+        header("location:index.php");
+    }
+
+    require_once("model/usuario/verificar_usuario.php");
+?>
 <body>
     <div class="main">
         <img src="images/logo-blanco.png" alt="pay-d-man-logo" width="200px">
@@ -16,7 +29,7 @@
             <img src="images/user-none-2.PNG" alt="Usuario" width="150px">
             <h2>Acceder</h2>
 
-            <form action="<?php?>" method="post">
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
                 <div class="text">
                     <i class="material-icons">person</i>
                     <input type="text" name="usuario" id="usuario" placeholder="Número de control">
@@ -39,6 +52,8 @@
             <p>¿No tienes cuenta? <a href="signup">Regístrate gratis</a></p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="js/login.js"></script>
     
     
 </body>

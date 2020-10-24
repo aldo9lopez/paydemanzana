@@ -11,7 +11,15 @@
 </head>
 
     <script src="js/signup-head.js"></script>
-
+<?php
+    require_once("model/usuario/verificar_sesion.php");
+    if(session_status()!=2){
+        session_start();
+    }
+    if(isset($_SESSION["usuario"])){
+        header("location:index.php");
+    }
+?>
 
 <?php
     require_once("model/usuario/registrar_usuario.php");
