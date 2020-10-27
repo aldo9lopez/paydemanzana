@@ -17,7 +17,7 @@
         session_start();
     }
     if(isset($_SESSION["usuario"])){
-        header("location:index.php");
+        header("location:index");
     }
 ?>
 
@@ -32,7 +32,7 @@
 
         <div class="signup">
             <h2>Registro:</h2>
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" onsubmit="return validar()">
+            <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php")); ?>" method="post" onsubmit="return validar()">
                 <table class="registro">
                     <tr>
                         <td colspan="1">
@@ -68,6 +68,13 @@
                             <label for="carrera">Carrera: *</label>
                             <select name="carrera" id="carrera">
                                 <option value="1" id="sistemas">Sistemas</option>
+                                <option value="2" id="tics">TICs</option>
+                                <option value="3" id="electronica">Electrónica</option>
+                                <option value="4" id="mecatronica">Mecatrónica</option>
+                                <option value="5" id="electromecanica">Electromecánica</option>
+                                <option value="6" id="logistica">Logística</option>
+                                <option value="7" id="industrial">Industrial</option>
+                                <option value="8" id="gestion">Gestión</option>
                             </select>
                         </td>
 

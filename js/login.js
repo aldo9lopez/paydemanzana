@@ -19,7 +19,7 @@ function error(){
 function success(){
     Swal.fire({
         title: "Usuario creado",
-        text: `Tu usuario ha sido creado con éxito`,
+        text: `Tu usuario ha sido creado, hemos enviado una clave de verificación a tu correo`,
         icon: 'success',
         width: '400px',
         confirmButtonColor: '#5DD65A'

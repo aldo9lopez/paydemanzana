@@ -1,0 +1,134 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+body {
+  background: #fbffbe;
+}
+
+body .main {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#db4545), to(#fbffbe));
+  background: linear-gradient(180deg, #db4545, #fbffbe);
+}
+
+body .main .login {
+  background: #FFFFFF;
+  width: 40%;
+  max-width: 800px;
+  min-width: 350px;
+  margin: 40px auto 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+body .main .login form div {
+  margin: 15px auto 5px auto;
+}
+
+body .main .login form input[type="text"] {
+  background: #FFF;
+  width: 150px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #db4545;
+  font-size: 15px;
+  padding: 5px;
+  display: block;
+  margin: auto;
+}
+
+body .main .login form input[type="text"]:hover {
+  border-color: #922b2b;
+}
+
+body .main .login form input[type="text"]:focus {
+  border: 1px solid #922b2b;
+  -webkit-box-shadow: 0px 0px 8px #922b2b;
+          box-shadow: 0px 0px 8px #922b2b;
+  outline: none;
+}
+
+body .main .login form .btn input {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  background: #db4545;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 25px;
+}
+
+body .main .login form .btn input:hover {
+  background: #922b2b;
+  cursor: pointer;
+}
+
+body .main .login form .btn input:focus {
+  -webkit-box-shadow: 0px 0px 8px #922b2b;
+          box-shadow: 0px 0px 8px #922b2b;
+}
+
+body .main .reenviar-correo {
+  font-size: 15px;
+  width: 500px;
+  margin: 30px auto 30px auto;
+  padding: 10px 10px 10px 10px;
+}
+
+body .main .reenviar-correo input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 5px;
+  background: #db4545;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 7px;
+}
+
+body .main .reenviar-correo input:hover {
+  background: #922b2b;
+  cursor: pointer;
+}
+
+body .main .reenviar-correo input:focus {
+  -webkit-box-shadow: 0px 0px 8px #922b2b;
+          box-shadow: 0px 0px 8px #922b2b;
+}
+/*# sourceMappingURL=verificar.css.map */

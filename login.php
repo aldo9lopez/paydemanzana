@@ -17,7 +17,7 @@
         session_start();
     }
     if(isset($_SESSION["usuario"])){
-        header("location:index.php");
+        header("location:index");
     }
 
     require_once("model/usuario/verificar_usuario.php");
@@ -29,7 +29,7 @@
             <img src="images/user-none-2.PNG" alt="Usuario" width="150px">
             <h2>Acceder</h2>
 
-            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+            <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php"));?>" method="post">
                 <div class="text">
                     <i class="material-icons">person</i>
                     <input type="text" name="usuario" id="usuario" placeholder="Número de control">
