@@ -27,7 +27,7 @@ if (isset($_POST["enviar"])) {
                     $resultado->execute();
                     $registro = $resultado->fetch(PDO::FETCH_ASSOC);
                     if (isset($_POST["recordar"])) {
-                        $user_hash = $user . "inpira_alsios";
+                        $user_hash = $user . "inspira_pay_alsios";
                         setcookie("usuario", $_POST["usuario"], time() + 86400, '/');
                         setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + 86400, '/');
                     }

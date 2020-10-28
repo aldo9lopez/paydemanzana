@@ -1,0 +1,76 @@
+@import "main.sass"
+
+.main
+    width: 100%
+    .contenido
+        margin: 0
+        width: 100%
+        display: flex
+        .sidebar
+            margin: 0px 0px
+            width: 250px
+            background: $rojo-1
+            color: #FFFFFF
+            padding: 20px
+            float: left
+            overflow: hidden
+            flex-wrap: wrap
+            justify-content: space-between
+            ul
+                display: block
+                width: 100%
+                list-style: none
+                margin: 10px 0px
+                text-align: left
+                list-style-type: none
+                padding: 0px
+                height: 100vh
+                li
+                    width: 100%
+                    margin: 0px
+                    display: block
+                    a
+                        width: 100%
+                        padding: 15px 0px
+                        display: block
+                        text-decoration: none
+                        color: #FFFFFF
+                        transition: padding .3s
+                        i
+                            margin: 0px 10px
+                            vertical-align: middle
+                    a:hover
+                        padding: 15px 10px
+            .perfil
+                .nombre
+                    width: 70px
+                    height: 70px
+                    display: flex
+                    img
+                        width: 60px
+                        height: 60px
+                        border-radius: 50%
+                        border: 3px solid #ffffff
+                        object-fit: cover
+                        float: left
+                    span
+                        float: left
+                        margin: 10px 10px
+                        font-size: 20px
+                        vertical-align: middle
+                        align-items: center
+            .carrera
+                margin: 20px auto
+                span
+                    padding: 5px
+                    border-radius: 10px
+                    background: #ffffff
+                    color: $rojo-1
+                    font-family: $font-2
+@media screen and ( max-width: 1000px )
+    .sidebar
+        left: -100%
+        margin: 0
+        position: fixed
+        
+

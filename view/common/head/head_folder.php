@@ -7,3 +7,4 @@
     <title><?php echo $titulo;?></title>
     <link rel="shortcut icon" href="../images/ico-copia.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../style/header.css" rel="stylesheet">

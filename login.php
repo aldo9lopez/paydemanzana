@@ -19,7 +19,6 @@
     if(isset($_SESSION["usuario"])){
         header("location:index");
     }
-
     require_once("model/usuario/verificar_usuario.php");
 ?>
 <body>

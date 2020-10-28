@@ -1,0 +1,127 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .contenido {
+  margin: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .contenido .sidebar {
+  margin: 0px 0px;
+  width: 250px;
+  background: #db4545;
+  color: #FFFFFF;
+  padding: 20px;
+  float: left;
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .contenido .sidebar ul {
+  display: block;
+  width: 100%;
+  list-style: none;
+  margin: 10px 0px;
+  text-align: left;
+  list-style-type: none;
+  padding: 0px;
+  height: 100vh;
+}
+
+.main .contenido .sidebar ul li {
+  width: 100%;
+  margin: 0px;
+  display: block;
+}
+
+.main .contenido .sidebar ul li a {
+  width: 100%;
+  padding: 15px 0px;
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-transition: padding .3s;
+  transition: padding .3s;
+}
+
+.main .contenido .sidebar ul li a i {
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+
+.main .contenido .sidebar ul li a:hover {
+  padding: 15px 10px;
+}
+
+.main .contenido .sidebar .perfil .nombre {
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .contenido .sidebar .perfil .nombre img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+}
+
+.main .contenido .sidebar .perfil .nombre span {
+  float: left;
+  margin: 10px 10px;
+  font-size: 20px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .contenido .sidebar .carrera {
+  margin: 20px auto;
+}
+
+.main .contenido .sidebar .carrera span {
+  padding: 5px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #db4545;
+  font-family: Proxima Nova Bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    left: -100%;
+    margin: 0;
+    position: fixed;
+  }
+}
+/*# sourceMappingURL=side-bar.css.map */

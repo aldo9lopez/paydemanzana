@@ -21,7 +21,7 @@ body {
 
 body header {
   width: 100%;
-  background: #fbffbe;
+  background: #ffdf88;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +147,15 @@ body header .barra-top .calificar a:hover {
   background: #f8b1b1;
 }
 
+body .menu_bar {
+  display: block;
+  position: absolute;
+}
+
+body .menu_bar i {
+  color: #db4545;
+}
+
 @media screen and (max-width: 1000px) {
   .barra-top {
     padding: 0px;
@@ -168,6 +177,22 @@ body header .barra-top .calificar a:hover {
   }
   .buscar input[type="submit"] {
     padding: 10px;
+  }
+  .menu_bar {
+    display: block;
+    margin: 10px;
+    position: absolute;
+  }
+  .menu_bar a {
+    background: #db4545;
+    padding: 5px 5px;
+    border-radius: 50%;
+    display: block;
+  }
+  .menu_bar a i {
+    color: #FFFFFF;
+    vertical-align: middle;
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=header.css.map */

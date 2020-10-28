@@ -5,7 +5,6 @@
         if(password_verify($usuario_ver,$_COOKIE["password"])){
             session_start(); 
             $_SESSION["usuario"]=$_COOKIE["usuario"];
-            $_SESSION["tipo"]=$_COOKIE["tipo"];
         }
     }
 ?>

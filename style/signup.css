@@ -15,7 +15,7 @@ body {
 }
 
 body {
-  background: #fbffbe;
+  background: #ffdf88;
 }
 
 body .main {
@@ -23,8 +23,8 @@ body .main {
   height: 100%;
   text-align: center;
   padding: 40px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#db4545), to(#fbffbe));
-  background: linear-gradient(180deg, #db4545, #fbffbe);
+  background: -webkit-gradient(linear, left top, left bottom, from(#db4545), to(#ffdf88));
+  background: linear-gradient(180deg, #db4545, #ffdf88);
 }
 
 body .main .signup {
