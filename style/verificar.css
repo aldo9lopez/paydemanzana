@@ -131,4 +131,10 @@ body .main .reenviar-correo input:focus {
   -webkit-box-shadow: 0px 0px 8px #922b2b;
           box-shadow: 0px 0px 8px #922b2b;
 }
+
+@media screen and (max-width: 1000px) {
+  body .main .reenviar-correo {
+    width: 80%;
+  }
+}
 /*# sourceMappingURL=verificar.css.map */

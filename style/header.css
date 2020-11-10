@@ -94,29 +94,22 @@ body header .barra-top .buscar select:focus {
   outline: none;
 }
 
-body header .barra-top .buscar input[type="submit"] {
-  font-size: 15px;
-  font-family: Proxima Nova Bold;
+body header .barra-top .buscar button {
   color: #ffffff;
   border: 0;
   border-radius: 10px;
   background: #db4545;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px 25px;
+  padding: 5px 25px;
+  vertical-align: middle;
 }
 
-body header .barra-top .buscar input[type="submit"]:hover {
+body header .barra-top .buscar button:hover {
   background: #f8b1b1;
   cursor: pointer;
   color: #3a3a3a;
 }
 
-body header .barra-top .buscar input[type="submit"]:focus {
+body header .barra-top .buscar button:focus {
   -webkit-box-shadow: 0px 0px 8px #f8b1b1;
           box-shadow: 0px 0px 8px #f8b1b1;
 }
@@ -148,7 +141,7 @@ body header .barra-top .calificar a:hover {
 }
 
 body .menu_bar {
-  display: block;
+  display: none;
   position: absolute;
 }
 
@@ -157,39 +150,35 @@ body .menu_bar i {
 }
 
 @media screen and (max-width: 1000px) {
-  .barra-top {
-    padding: 0px;
-  }
-  .img {
+  body header .barra-top .img {
     display: none;
     width: 0%;
   }
-  .calificar {
+  body header .barra-top .calificar {
     display: none;
     width: 0%;
   }
-  .buscar {
-    width: 100%;
-    display: inline;
-  }
-  .buscar input[type="text"] {
+  body header .barra-top .buscar {
     width: 100%;
   }
-  .buscar input[type="submit"] {
-    padding: 10px;
+  body header .barra-top .buscar button {
+    padding: 5px 10px;
   }
-  .menu_bar {
+  body header .barra-top .buscar select {
+    padding: 10px 5px 10px 0px;
+  }
+  body .menu_bar {
     display: block;
     margin: 10px;
     position: absolute;
   }
-  .menu_bar a {
+  body .menu_bar a {
     background: #db4545;
     padding: 5px 5px;
     border-radius: 50%;
     display: block;
   }
-  .menu_bar a i {
+  body .menu_bar a i {
     color: #FFFFFF;
     vertical-align: middle;
     font-size: 50px;

@@ -48,21 +48,18 @@ body
                     border: 1px solid $rojo-2
                     box-shadow: 0px 0px 8px $rojo-2
                     outline: none
-                input[type="submit"]
-                    font-size: 15px
-                    font-family: $font-2
+                button
                     color: #ffffff
                     border: 0
                     border-radius: 10px
                     background: $rojo-1
-                    justify-content: center
-                    align-items: center
-                    padding: 10px 25px
-                input[type="submit"]:hover
+                    padding: 5px 25px
+                    vertical-align: middle
+                button:hover
                     background: $rojo-2
                     cursor: pointer
                     color: $gris-3
-                input[type="submit"]:focus
+                button:focus
                     box-shadow: 0px 0px 8px $rojo-2
             .img
                 width: 10%
@@ -81,38 +78,39 @@ body
                 a:hover
                     background: $rojo-2
     .menu_bar
-        display: block
+        display: none
         position: absolute
         i   
             color: $rojo-1
 
 @media screen and ( max-width: 1000px )
-    .barra-top
-        padding: 0px
-    .img
-        display: none
-        width: 0%
-    .calificar
-        display: none
-        width: 0%
-    .buscar
-        width: 100%
-        display: inline
-        input[type="text"]
-            width: 100%
-        input[type="submit"]
-            padding: 10px
-    .menu_bar
-        display: block
-        margin: 10px
-        position: absolute
-        a
-            background: $rojo-1
-            padding: 5px 5px
-            border-radius: 50%
+    body
+        header
+            .barra-top
+                .img
+                    display: none
+                    width: 0%
+                .calificar
+                    display: none
+                    width: 0%
+                .buscar
+                    width: 100%
+                    button
+                        padding: 5px 10px
+                    select
+                        padding: 10px 5px 10px 0px
+    body
+        .menu_bar
             display: block
-            i
-                color: #FFFFFF
-                vertical-align: middle
-                font-size: 50px
+            margin: 10px
+            position: absolute
+            a
+                background: $rojo-1
+                padding: 5px 5px
+                border-radius: 50%
+                display: block
+                i
+                    color: #FFFFFF
+                    vertical-align: middle
+                    font-size: 50px
         
