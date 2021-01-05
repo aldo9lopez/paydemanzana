@@ -11,7 +11,7 @@
     </div>
     <ul>
         <hr>
-        <li><a href="#" id="side-inicio"><i class="material-icons">home</i><span class="side-text">Inicio</span></a></li>
+        <li><a href="index" id="side-inicio"><i class="material-icons">home</i><span class="side-text">Inicio</span></a></li>
         <li><a href="#" id="side-perfil"><i class="material-icons">person</i><span class="side-text">Mi perfil</span></a></li>
         <li><a href="#" id="side-notificaciones"><i class="material-icons">notifications</i><span class="side-text">Notificaciones</span></a></li>
         <li><a href="#" id="side-manzanas"><i class="material-icons">stars</i><span class="side-text">Manzanas</span></a></li>

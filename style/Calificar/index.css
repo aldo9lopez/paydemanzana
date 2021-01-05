@@ -1,0 +1,51 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a div {
+  display: inline-block;
+  background: #e1f0ff;
+  padding: 50px 15px;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+a div span {
+  display: block;
+  margin: 5px auto;
+  text-align: center;
+}
+
+a div .info-mat {
+  font-size: 14px;
+}
+
+a div .info-sem {
+  font-family: Proxima Nova Bold;
+  font-size: 20px;
+  margin: 5px auto 35px auto;
+}
+
+a div:hover {
+  background: #b8d0e7;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,5 +1,5 @@
 <?php
-    require_once("controller/conexion.php");
+    
     $sql="SELECT Nombre, Apellido, Carrera FROM usuario WHERE No_control=:usuario";
     $resultado=$base->prepare($sql);
     $resultado->bindValue(":usuario",$usuario);
@@ -17,12 +17,14 @@
 
     $profileimage = $registro["Imagen_ruta"];
 
-    $sql="SELECT Nombre_corto FROM carrera WHERE Id_carrera=:carrera";
+    $sql="SELECT * FROM carrera WHERE Id_carrera=:carrera";
     $resultado=$base->prepare($sql);
     $resultado->bindValue(":carrera",$carrera);
     $resultado->execute();
     $registro=$resultado->fetch((PDO::FETCH_ASSOC));
 
     $profilecareer = $registro["Nombre_corto"];
+    $careername = $registro["Nombre_carrera"];
+    $careersem = $registro["Semestres"];
 
 ?>

@@ -7,14 +7,14 @@ if(isset($_POST["registrarse"])){
         try{
             $query="INSERT INTO usuario VALUES(:contr,:nombre,:apellido,:sexo,:email,:carrera,:anio)";
             $resultado=$base->prepare($query);
-            $user= htmlentities(addslashes($_POST["control"]));
-            $nombre= htmlentities(addslashes($_POST["nombre"]));
-            $apellido= htmlentities(addslashes($_POST["apellido"]));
-            $sexo= htmlentities(addslashes($_POST["sexo"]));
-            $carrera= htmlentities(addslashes($_POST["carrera"]));
-            $email= htmlentities(addslashes($_POST["email"]));
-            $anio= htmlentities(addslashes($_POST["anio"]));
-            $password= htmlentities(addslashes($pass_cifrado));
+            $user= $_POST["control"];
+            $nombre= $_POST["nombre"];
+            $apellido= $_POST["apellido"];
+            $sexo= $_POST["sexo"];
+            $carrera= $_POST["carrera"];
+            $email= $_POST["email"];
+            $anio= $_POST["anio"];
+            $password= $pass_cifrado;
             $correo = "$email@leon.tecnm.mx";
             $resultado->bindValue(":contr",$user);
             $resultado->bindValue(":nombre",$nombre);

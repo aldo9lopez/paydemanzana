@@ -1,0 +1,49 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+.frame table {
+  margin: 20px auto;
+  text-align: left;
+}
+
+.frame table td {
+  padding: 7px 25px;
+}
+
+.frame table td a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.frame table td a[class="calif"] {
+  background: #346ca0;
+}
+
+.frame table td a[class="no-calif"] {
+  background: #00a329;
+}
+
+.frame table td a:hover {
+  background: #8ac6ff;
+}
+
+.frame p {
+  font-family: Proxima Nova Bold;
+  color: #922b2b;
+}
+/*# sourceMappingURL=semestre.css.map */

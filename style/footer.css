@@ -1,0 +1,35 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  background: #3a3a3a;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+footer div {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+footer div img {
+  width: 150px;
+  display: block;
+  margin: 10px auto;
+}
+/*# sourceMappingURL=footer.css.map */

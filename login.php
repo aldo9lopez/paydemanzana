@@ -25,7 +25,7 @@
     <div class="main">
         <img src="images/logo-blanco.png" alt="pay-d-man-logo" width="200px">
         <div class="login">
-            <img src="images/user-none-2.PNG" alt="Usuario" width="150px">
+            <img src="images/user-none-2.png" alt="Usuario" width="150px">
             <h2>Acceder</h2>
 
             <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php"));?>" method="post">

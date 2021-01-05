@@ -9,3 +9,4 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
     <link href="style/side-bar.css" rel="stylesheet">
+    <link href="style/footer.css" rel="stylesheet">

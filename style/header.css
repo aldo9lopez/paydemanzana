@@ -49,12 +49,12 @@ body header .barra-top .buscar input[type="text"], body header .barra-top .busca
   background: #FFF;
   width: 50%;
   max-width: 1000px;
-  border-radius: 5px;
+  border-radius: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #db4545;
+  border: 0px solid #db4545;
   font-size: 15px;
-  padding: 10px 7px;
+  padding: 10px;
 }
 
 body header .barra-top .buscar input[type="text"]:hover, body header .barra-top .buscar input[type="tel"]:hover, body header .barra-top .buscar input[type="email"]:hover, body header .barra-top .buscar input[type="password"]:hover, body header .barra-top .buscar input[type="number"]:hover, body header .barra-top .buscar textarea:hover {
@@ -73,7 +73,7 @@ body header .barra-top .buscar select {
   padding: 10px 5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #db4545;
+  border: 0px solid #db4545;
   border-radius: 5px;
   background: #ffffff;
 }
@@ -129,7 +129,8 @@ body header .barra-top .calificar a {
   color: #3a3a3a;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid #db4545;
+  border: 0px solid #db4545;
+  background: #FFFFFF;
 }
 
 body header .barra-top .calificar a img {
@@ -170,7 +171,7 @@ body .menu_bar i {
   body .menu_bar {
     display: block;
     margin: 10px;
-    position: absolute;
+    position: fixed;
   }
   body .menu_bar a {
     background: #db4545;
