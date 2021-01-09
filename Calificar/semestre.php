@@ -38,3 +38,4 @@
         require_once("../view/common/footer/footer_folder.html");
     ?>
 </body>
+</html>

@@ -1,7 +1,8 @@
 <?php
-    $sql="SELECT COUNT(*) as Materias FROM (SELECT DISTINCT(Materia) FROM calificacion WHERE Usuario = :usuario AND EXISTS(SELECT Id_materia from materia WHERE Semestre = $i AND Carrera = :carrera)) As Distingir";
+    require_once("../controller/cript_user.php");
+    $sql="SELECT COUNT(*) as Materias FROM (SELECT DISTINCT(A.Materia) FROM calificacion A WHERE A.Usuario = :usuario AND EXISTS(SELECT B.Id_materia from materia B WHERE  A.Materia=B.Id_materia AND B.Semestre = $i AND B.Carrera = :carrera)) As Distingir";
     $resultado=$base->prepare($sql);
-    $resultado->bindValue(":usuario",$usuario);
+    $resultado->bindValue(":usuario",encriptar($usuario));
     $resultado->bindValue(":carrera",$carrera);
     $resultado->execute();
     $registro=$resultado->fetch((PDO::FETCH_ASSOC));

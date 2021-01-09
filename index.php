@@ -32,3 +32,4 @@
         require_once("view/common/footer/footer_index.html");
     ?>
 </body>
+</html>

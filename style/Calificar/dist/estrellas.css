@@ -1,0 +1,25 @@
+
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label[class="star"] {
+    color: grey;
+    margin: 0px 2px;
+    font-size: 30px;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label[class="star"]:hover,
+  label[class="star"]:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }

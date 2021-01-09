@@ -1,4 +1,5 @@
 <?php
+    require_once("../controller/cript_user.php");
     $sql="";
     if(!$calificadas){
         $sql = "SELECT * FROM materia A WHERE A.Carrera = $carrera and A.Semestre = $semestre AND NOT EXISTS(Select Materia From calificacion B Where A.Id_materia = B.Materia AND B.Usuario=:usuario)";
@@ -6,7 +7,7 @@
         $sql = "SELECT * FROM materia A WHERE A.Carrera = $carrera and A.Semestre = $semestre AND EXISTS(Select Materia From calificacion B Where A.Id_materia = B.Materia AND B.Usuario=:usuario)";
     }
     $resultado=$base->prepare($sql);
-    $resultado->bindValue(":usuario",$usuario);
+    $resultado->bindValue(":usuario",encriptar($usuario));
     $resultado->execute();
     $registros=$resultado->fetchAll((PDO::FETCH_OBJ));
     echo '<table class="materias">';

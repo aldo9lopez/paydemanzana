@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-01-2021 a las 21:33:02
+-- Tiempo de generación: 09-01-2021 a las 20:55:09
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.1
 
@@ -38,6 +38,39 @@ CREATE TABLE `calificacion` (
   `Opinion` varchar(300) COLLATE utf8_spanish_ci NOT NULL,
   `Manzana` enum('No','Buena','Mala') COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `calificacion`
+--
+
+INSERT INTO `calificacion` (`Id_calificacion`, `Usuario`, `Estatus`, `Materia`, `Profesor`, `Estrellas`, `Opinion`, `Manzana`) VALUES
+(1, 'Y6aXpJ53Zns=', 'Aprobada', 14, 156, 5, 'Profesor poco comprendido pero si pones atención aprendes mucho', 'Buena'),
+(2, 'Y6aXpJ53Zns=', 'Reprobada', 10, 71, 1, 'La peor opción para esta materia sin duda', 'Mala'),
+(3, 'Y6aXpJ53Zns=', 'Aprobada', 10, 97, 3, 'Estuvo bien para ser esta materia', 'No'),
+(4, 'Y6aXpJ53Zns=', 'Aprobada', 9, 76, 4, 'Muy buena clase, enseña todo bien', 'No'),
+(5, 'Y6aXpJ53Zns=', 'Aprobada', 1, 115, 4, 'Buena profesora', 'No'),
+(6, 'Y6aXpJ53Zns=', 'Aprobada', 4, 71, 1, 'No se puede dar peor esta materia', 'Mala'),
+(7, 'Y6aXpJ53Zns=', 'Aprobada', 5, 83, 3, 'Bueno, en general', 'No'),
+(8, 'Y6aXpJ53Zns=', 'Aprobada', 2, 88, 4, 'Bien dada esta materia', 'No'),
+(9, 'Y6aXpJ53Zns=', 'Aprobada', 6, 68, 2, 'Muy poco profesionalismo', 'No'),
+(10, 'Y6aXpJ53Zns=', 'Aprobada', 8, 66, 4, 'Bien en general', 'No'),
+(11, 'Y6aXpJ53Zns=', 'Aprobada', 12, 115, 4, 'Muy bien dada la clase', 'Buena'),
+(12, 'Y6aXpJ53Zns=', 'Aprobada', 11, 86, 3, 'Se ven muchos videos', 'No'),
+(13, 'Y6aXpJ53Zns=', 'Aprobada', 16, 65, 1, 'Muy mal profesor', 'Mala'),
+(14, 'Y6aXpJ53Zns=', 'Aprobada', 30, 59, 1, 'Nunca tomen con este profesor, no sabe nada sobre la materia', 'Mala'),
+(15, 'Y6aXpJ53Zns=', 'Aprobada', 27, 70, 3, 'Con este profe, es como si nunca tomaras la clase', 'No'),
+(16, 'Y6aXpJ53Zns=', 'Aprobada', 22, 83, 3, '', 'No'),
+(17, 'Y6aXpJ53Zns=', 'Aprobada', 33, 74, 4, 'Buen profesor', 'Buena'),
+(18, 'Y6aXpJ53Zns=', 'Aprobada', 18, 77, 2, 'Mucha exposición', 'No'),
+(19, 'Y6aXpJ53Zns=', 'Aprobada', 25, 251, 5, 'Excelente clase, sin duda la mejor opción para esta materia', 'Buena'),
+(20, 'Y6aXpJ53Zns=', 'Aprobada', 28, 75, 2, 'Poco aprendizaje', 'Mala'),
+(21, 'Y6aXpJ53Zns=', 'Aprobada', 20, 8, 3, 'Materia importante para la carrera, si quieres aprender mejor no tomes con esta profesora', 'No'),
+(22, 'Y6aXpJ53Zns=', 'Aprobada', 46, 62, 2, 'Poco y nada aprendes con esta maestra (no tomar con ella)', 'Mala'),
+(23, 'Y6aXpJ53Zns=', 'Aprobada', 24, 78, 3, '', 'No'),
+(24, 'Y6aXpJ53Zns=', 'Aprobada', 21, 145, 3, 'No llegues tarde nunca!', 'No'),
+(25, 'Y6aXpJ53Zns=', 'Aprobada', 19, 20, 4, 'Bien, en general', 'No'),
+(26, 'Y6aXo6B0ZHY=', 'Aprobada', 1, 115, 4, 'Lo normal', 'No'),
+(27, 'Y6iZoqFxbHQ=', 'Aprobada', 54, 18, 3, 'Masomenos', 'No');
 
 -- --------------------------------------------------------
 
@@ -300,7 +333,7 @@ CREATE TABLE `post_notificacion` (
 
 CREATE TABLE `profesor` (
   `Id_profesor` int(11) NOT NULL,
-  `Título` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `Titulo` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
   `Nombre` varchar(140) COLLATE utf8_spanish_ci NOT NULL,
   `Sexo` enum('Masculino','Femenino','Sin especificar') COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
@@ -309,7 +342,7 @@ CREATE TABLE `profesor` (
 -- Volcado de datos para la tabla `profesor`
 --
 
-INSERT INTO `profesor` (`Id_profesor`, `Título`, `Nombre`, `Sexo`) VALUES
+INSERT INTO `profesor` (`Id_profesor`, `Titulo`, `Nombre`, `Sexo`) VALUES
 (1, 'Ing.', 'Juan Manuel Luna Valle', 'Masculino'),
 (2, 'Lic.', 'Silvia Villalpando Contreras', 'Femenino'),
 (3, 'Lic.', 'Patricia Donato Jiménez', 'Femenino'),
@@ -325,7 +358,6 @@ INSERT INTO `profesor` (`Id_profesor`, `Título`, `Nombre`, `Sexo`) VALUES
 (13, 'Lic.', 'Claudia Araceli Caudillo Peñaflor', 'Femenino'),
 (14, 'Ing.', 'Juan José Vallejo Nuñez', 'Masculino'),
 (15, 'Lic.', 'María Eugenia Pérez Parra', 'Femenino'),
-(16, 'Ing.', 'Patricia María Castlillo Martínez', 'Femenino'),
 (17, 'Lic.', 'Lilia Berenice Rodríguez Ramírez', 'Femenino'),
 (18, 'Ing.', 'María Raquel Hernández Segura', 'Femenino'),
 (19, 'Ing.', 'Jesús Enrique Ramírez Mendez', 'Masculino'),
@@ -787,7 +819,7 @@ ALTER TABLE `usuario_verificar`
 -- AUTO_INCREMENT de la tabla `calificacion`
 --
 ALTER TABLE `calificacion`
-  MODIFY `Id_calificacion` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_calificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `carrera`

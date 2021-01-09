@@ -19,6 +19,6 @@
         <li><a href="#" id="side-config"><i class="material-icons">settings</i><span class="side-text">Configuracion</span></a></li>
         <li><a href="#" id="side-ayuda"><i class="material-icons">help</i><span class="side-text">Ayuda</span></a></li>
         <hr>
-        <li><a href="logout" id="side-ayuda"><span class="side-text">Cerrar Sesión</span></a></li>
+        <li><a href="../logout" id="side-ayuda"><span class="side-text">Cerrar Sesión</span></a></li>
     </ul>
 </div>
