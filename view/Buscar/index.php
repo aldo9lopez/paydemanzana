@@ -48,7 +48,7 @@
                 }else if($searchtype=="materias"){
                     ?>
                     <div class="materias">
-                        <a href="#?id=<?php echo $result->Id_materia;?>"><?php echo $result->Nombre_materia;?></a>
+                        <a href="materia?id=<?php echo $result->Id_materia;?>"><?php echo $result->Nombre_materia;?></a>
                     </div>
                     
                     <?php
