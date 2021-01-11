@@ -162,11 +162,15 @@ body .menu_bar i {
   body header .barra-top .buscar {
     width: 100%;
   }
+  body header .barra-top .buscar input[type="text"] {
+    width: 80%;
+  }
   body header .barra-top .buscar button {
     padding: 5px 10px;
   }
   body header .barra-top .buscar select {
-    padding: 10px 5px 10px 0px;
+    display: none;
+    width: 0%;
   }
   body .menu_bar {
     display: block;

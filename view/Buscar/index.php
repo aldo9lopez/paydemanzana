@@ -1,4 +1,37 @@
 <div class="espacio">
+    <div class="movil-selection">
+        <span class="movil-option">
+        <?php
+            if($searchtype!="usuarios"){
+                echo '<span class="movil-option">';
+                echo "<a href=\"../Buscar/?buscar=$search&buscar-tipo=usuarios\">Usuarios</a>";
+                echo '</span>';
+            }else{
+                echo '<span class="movil-option-selected">';
+                echo "Usuarios";
+                echo '</span>';
+            }
+            if($searchtype!="materias"){
+                echo '<span class="movil-option">';
+                echo "<a href=\"../Buscar/?buscar=$search&buscar-tipo=materias\">Materias</a>";
+                echo '</span>';
+            }else{
+                echo '<span class="movil-option-selected">';
+                echo "Materias";
+                echo '</span>';
+            }
+            if($searchtype!="profesores"){
+                echo '<span class="movil-option">';
+                echo "<a href=\"../Buscar/?buscar=$search&buscar-tipo=profesores\">Profesores</a>";
+                echo '</span>';
+            }else{
+                echo '<span class="movil-option-selected">';
+                echo "Profesores";
+                echo '</span>';
+            }
+        ?>
+
+    </div>
     <div class="frame">
         <h3>Resultados de la busqueda</h3>
         <?php

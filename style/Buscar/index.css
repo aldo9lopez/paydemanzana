@@ -1,0 +1,130 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.movil-selection {
+  display: none;
+  margin: 10px auto 25px auto;
+  padding: 10px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.movil-selection .movil-option a {
+  padding: 10px 20px;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.movil-selection .movil-option-selected {
+  padding: 10px 20px;
+  background: #e0e0e0;
+}
+
+.movil-selection span:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.movil-selection span:nth-child(3) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.frame .usuario {
+  padding: 10px 8px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .usuario img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+}
+
+.frame .usuario a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .usuario span {
+  padding: 5px;
+  border-radius: 5px;
+  background: #7e7e7e;
+  color: #FFFFFF;
+}
+
+.frame .materias {
+  padding: 10px 8px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .materias a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .profesores {
+  padding: 10px 8px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .profesores a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #346ca0;
+}
+
+@media screen and (max-width: 1000px) {
+  .movil-selection {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */

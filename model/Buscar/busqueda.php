@@ -10,7 +10,7 @@
 
     $query_tabla = "usuario";
     $query_match = "Nombre, Apellido";
-    $query_add= "";
+    $query_add= " LIMIT 20";
     $default_select=0;
     if($searchtype=="materias"){
         $query_tabla = "materia";
@@ -21,6 +21,7 @@
         $query_tabla = "profesor";
         $query_match ="Nombre";
         $default_select=2;
+        $query_add= "";
     }
 
     $sql = "SELECT * FROM $query_tabla WHERE MATCH($query_match) AGAINST (:search)$query_add";
