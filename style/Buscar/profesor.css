@@ -1,0 +1,247 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.frame {
+  text-align: center;
+}
+
+.frame .califica {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+
+.frame .califica a {
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #c2c2c2;
+  margin: 0px 10px;
+}
+
+.frame .califica a img {
+  vertical-align: middle;
+  margin: 0px 5px 0px 0px;
+}
+
+.frame .califica a:hover {
+  background: #f8b1b1;
+}
+
+.frame .prefix {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #7e7e7e;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.frame h2 {
+  font-size: 30px;
+  margin: 10px auto 7px auto;
+}
+
+.frame h2 span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #922b2b;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0px 10px;
+  vertical-align: middle;
+}
+
+.frame .profesor-stats {
+  margin: 6px auto 6px auto;
+  padding: 6px 10px;
+  background: #eeeeee;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+
+.frame .profesor-stats .estrellas {
+  padding: 0px 5px;
+}
+
+.frame .profesor-stats .estrellas .estrella {
+  font-size: 30px;
+  vertical-align: top;
+  margin: 0px 5px;
+  color: orange;
+}
+
+.frame .profesor-stats .manzanas-buenas {
+  padding: 0px 5px;
+  color: #db4545;
+}
+
+.frame .profesor-stats .manzanas-buenas img {
+  vertical-align: 0%;
+  margin: 0px 5px;
+}
+
+.frame .profesor-stats .manzanas-malas {
+  padding: 0px 5px;
+  color: #00a329;
+}
+
+.frame .profesor-stats .manzanas-malas img {
+  vertical-align: 0%;
+  margin: 0px 5px;
+}
+
+.frame .aprobacion {
+  font-size: 18px;
+}
+
+.frame .lista-materia {
+  margin: 30px auto 20px auto;
+}
+
+.frame .lista-materia span {
+  display: block;
+}
+
+.frame .lista-materia .titulo-opcion {
+  font-family: Proxima Nova Bold;
+}
+
+.frame .lista-materia .materia {
+  padding: 10px 8px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 6px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .lista-materia .materia a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame hr {
+  width: 80%;
+}
+
+.frame .comentarios {
+  width: 90%;
+  margin: 30px auto 0px auto;
+}
+
+.frame .comentarios .titulo-comentarios {
+  font-family: Proxima Nova Bold;
+}
+
+.frame .comentarios .filtrar-com {
+  margin: 20px auto 20px auto;
+}
+
+.frame .comentarios .filtrar-com input {
+  display: none;
+}
+
+.frame .comentarios .filtrar-com label {
+  font-size: 17px;
+  color: #FFFFFF;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #db4545;
+  margin: 15px 1px;
+}
+
+.frame .comentarios .filtrar-com label:hover {
+  background: #7e7e7e;
+  cursor: pointer;
+}
+
+.frame .comentarios .calificacion {
+  padding: 8px 15px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 6px auto;
+}
+
+.frame .comentarios .calificacion .estrellas {
+  font-size: 18px;
+}
+
+.frame .comentarios .calificacion p {
+  margin: 10px auto;
+}
+
+.frame .comentarios .calificacion .materia {
+  font-size: 13px;
+  color: #7e7e7e;
+}
+
+.frame .comentarios .calificacion .materia a {
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .comentarios .paginacion {
+  margin: 20px auto 0px auto;
+}
+
+.frame .comentarios .paginacion a {
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: #c2c2c2;
+  margin: 0px 5px;
+}
+
+.frame .comentarios .paginacion a:hover {
+  background: #f8b1b1;
+}
+
+@media screen and (max-width: 1000px) {
+  .frame .califica {
+    display: none;
+  }
+  .frame .responsive {
+    margin: 20px auto;
+    display: block;
+  }
+}
+/*# sourceMappingURL=profesor.css.map */

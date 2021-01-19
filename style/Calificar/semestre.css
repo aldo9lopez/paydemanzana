@@ -8,10 +8,22 @@
   src: url("font/Proxima Nova Bold.otf");
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .frame table {

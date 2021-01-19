@@ -1,0 +1,119 @@
+@import "../main.sass"
+
+.frame
+    text-align: center
+    .califica
+        display: block
+        width: fit-content
+        margin: 10px auto 30px auto
+        text-align: center
+        a
+            font-size: 15px
+            font-family: $font-2
+            text-decoration: none
+            color: $gris-3
+            padding: 6px 10px
+            border-radius: 10px
+            background: $gris-1
+            margin: 0px 10px
+            img
+                vertical-align: middle
+                margin: 0px 5px 0px 0px
+        a:hover
+            background: $rojo-2
+    .semestre
+        padding: 5px 10px
+        border-radius: 5px
+        background: $gris-2
+        color: #FFFFFF
+        font-size: 14px
+    h2
+        font-size: 30px
+        margin: 10px auto 7px auto
+    .aprobacion
+        font-size: 18px
+
+    .profesores
+        margin: 30px auto 20px auto
+        .lista-profesores
+            span
+                display: block
+            .titulo-opcion
+                font-family: $font-2
+            .profesor
+                padding: 10px 8px
+                background:  #eeeeee
+                border-radius: 10px
+                margin: 6px auto
+                width: fit-content
+                a
+                    margin: 0px 15px
+                    text-decoration: none
+                    color: $azul-2
+    .opciones
+        display: flex
+        text-align: center
+        margin: 20px auto
+        width: fit-content
+        .mejor-opcion
+            border-right: 2px solid $gris-3
+        div
+            max-width: 200px
+            display: inline-block
+            padding: 10px
+            span
+                display: block
+            .titulo-opcion
+                margin: 0px auto 15px auto
+                font-size: 17px
+            .profesor-opcion
+                a
+                    text-decoration: none
+                    color: $azul-2
+            .manzanas-opcion
+                padding: 5px 0px
+                background:  #eeeeee
+                border-radius: 10px
+                width: fit-content
+                img
+                    vertical-align: middle
+    hr
+        width: 80%
+    .comentarios
+        width: 90%
+        margin: 30px auto 0px auto
+        .titulo-comentarios
+            font-family: $font-2
+        .calificacion
+            padding: 8px 15px
+            background:  #eeeeee
+            border-radius: 10px
+            margin: 6px auto
+            p
+                margin: 10px auto
+            span
+                font-size: 14px
+                a
+                    text-decoration: none
+                    color: $azul-2
+        .paginacion
+            margin: 20px auto 0px auto
+            a
+                font-size: 15px
+                font-family: $font-2
+                text-decoration: none
+                color: $gris-3
+                padding: 6px 20px
+                border-radius: 10px
+                background: $gris-1
+                margin: 0px 5px
+            a:hover
+                background: $rojo-2
+
+@media screen and ( max-width: 1000px )
+    .frame
+        .califica
+            display: none
+
+
+

@@ -1,0 +1,212 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.frame {
+  text-align: center;
+}
+
+.frame .califica {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+
+.frame .califica a {
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: #c2c2c2;
+  margin: 0px 10px;
+}
+
+.frame .califica a img {
+  vertical-align: middle;
+  margin: 0px 5px 0px 0px;
+}
+
+.frame .califica a:hover {
+  background: #f8b1b1;
+}
+
+.frame .semestre {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #7e7e7e;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.frame h2 {
+  font-size: 30px;
+  margin: 10px auto 7px auto;
+}
+
+.frame .aprobacion {
+  font-size: 18px;
+}
+
+.frame .profesores {
+  margin: 30px auto 20px auto;
+}
+
+.frame .profesores .lista-profesores span {
+  display: block;
+}
+
+.frame .profesores .lista-profesores .titulo-opcion {
+  font-family: Proxima Nova Bold;
+}
+
+.frame .profesores .lista-profesores .profesor {
+  padding: 10px 8px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 6px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .profesores .lista-profesores .profesor a {
+  margin: 0px 15px;
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 20px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .opciones .mejor-opcion {
+  border-right: 2px solid #3a3a3a;
+}
+
+.frame .opciones div {
+  max-width: 200px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.frame .opciones div span {
+  display: block;
+}
+
+.frame .opciones div .titulo-opcion {
+  margin: 0px auto 15px auto;
+  font-size: 17px;
+}
+
+.frame .opciones div .profesor-opcion a {
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .opciones div .manzanas-opcion {
+  padding: 5px 0px;
+  background: #eeeeee;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.frame .opciones div .manzanas-opcion img {
+  vertical-align: middle;
+}
+
+.frame hr {
+  width: 80%;
+}
+
+.frame .comentarios {
+  width: 90%;
+  margin: 30px auto 0px auto;
+}
+
+.frame .comentarios .titulo-comentarios {
+  font-family: Proxima Nova Bold;
+}
+
+.frame .comentarios .calificacion {
+  padding: 8px 15px;
+  background: #eeeeee;
+  border-radius: 10px;
+  margin: 6px auto;
+}
+
+.frame .comentarios .calificacion p {
+  margin: 10px auto;
+}
+
+.frame .comentarios .calificacion span {
+  font-size: 14px;
+}
+
+.frame .comentarios .calificacion span a {
+  text-decoration: none;
+  color: #346ca0;
+}
+
+.frame .comentarios .paginacion {
+  margin: 20px auto 0px auto;
+}
+
+.frame .comentarios .paginacion a {
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  text-decoration: none;
+  color: #3a3a3a;
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: #c2c2c2;
+  margin: 0px 5px;
+}
+
+.frame .comentarios .paginacion a:hover {
+  background: #f8b1b1;
+}
+
+@media screen and (max-width: 1000px) {
+  .frame .califica {
+    display: none;
+  }
+}
+/*# sourceMappingURL=materia.css.map */

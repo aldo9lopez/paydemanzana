@@ -55,7 +55,7 @@
                 }else if($searchtype=="profesores"){
                     ?>
                     <div class="profesores">
-                        <a href="#?id=<?php echo $result->Id_profesor;?>"><?php echo $result->Titulo . " " . $result->Nombre ;?></a>
+                        <a href="profesor?id=<?php echo $result->Id_profesor;?>"><?php echo $result->Titulo . " " . $result->Nombre ;?></a>
                     </div>
                     
                     <?php

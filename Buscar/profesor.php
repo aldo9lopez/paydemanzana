@@ -11,13 +11,16 @@
     }
 
     require("../model/usuario/ver_perfil.php");
-    require("../model/Buscar/ver_materia.php");
-    $titulo= "Materia - $subjectname";
+    require("../model/Buscar/ver_profesor.php");
+    $titulo= "Profesor - $teachername";
+    if($teachergender=="Femenino"){
+        $titulo= "Profesora - $teachername";
+    }
 
     require_once("../view/common/head/head_folder.php");
 ?>
     <link href="../style/Buscar/main.css" rel="stylesheet">
-    <link href="../style/Buscar/materia.css" rel="stylesheet">
+    <link href="../style/Buscar/profesor.css" rel="stylesheet">
 
 </head>
 <body>
@@ -28,7 +31,7 @@
         <div class="contenido">
             <?php
                 require_once("../view/common/sidebar/side_folder.php");
-                require_once("../view/Buscar/materia.php");
+                require_once("../view/Buscar/profesor.php");
             ?>
         </div>
     </div>
@@ -36,9 +39,11 @@
         require_once("../view/common/footer/footer_folder.html");
         echo "<script type=\"text/javascript\">";
         echo "$( document ).ready(function() {
-            $(\"#buscar-tipo option[value=materias\").attr(\"selected\",true);
+            $(\"#buscar-tipo option[value=profesores\").attr(\"selected\",true);
+            changeComentarios(6);
         });";
-        echo "</script>"
+        echo "</script>";
     ?>
+    <script src="../js/Buscar/profesor.js"></script>
 </body>
 </html>

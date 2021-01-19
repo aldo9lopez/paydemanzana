@@ -21,6 +21,9 @@ body {
 
 body .main {
   min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 footer {
