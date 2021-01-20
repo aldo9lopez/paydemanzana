@@ -47,7 +47,7 @@
 
         $sql = "SELECT Count(*) as Veces, A.Materia As Id, (SELECT B.Nombre_materia FROM materia B WHERE B.Id_materia = A.Materia) As Nombre 
         FROM calificacion A WHERE A.Profesor = :profesor AND EXISTS(SELECT C.Id_materia FROM materia C WHERE A.Materia=C.Id_materia AND C.Carrera=$carrera) 
-        GROUP BY a.Materia ORDER BY Veces DESC LIMIT 4";
+        GROUP BY A.Materia ORDER BY Veces DESC LIMIT 4";
         $resultado=$base->prepare($sql);
         $resultado->bindValue(":profesor",$teacher);
         $resultado->execute();

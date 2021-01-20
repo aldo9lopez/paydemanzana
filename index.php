@@ -15,6 +15,7 @@
 
     require_once("view/common/head/head_index.php");
 ?>
+    <link href="style/index.css" rel="stylesheet">
 
 </head>
 <body>
@@ -25,6 +26,7 @@
         <div class="contenido">
             <?php
                 require_once("view/common/sidebar/side_index.php");
+                require_once("view/index.php");
             ?>
         </div>
     </div>

@@ -64,7 +64,7 @@
         if(isset($_GET["pag"])){
             $pagina=$_GET["pag"];
         }
-        $sql1="SELECT A.Id_calificacion As Calif, A.Profesor as Profesor, A.Opinion as Opinion , (SELECT concat_ws(' ', B.Titulo, B.Nombre) FROM profesor B WHERE B.Id_profesor=A.Profesor) as Nombre FROM calificacion A WHERE a.Materia = :materia";
+        $sql1="SELECT A.Id_calificacion As Calif, A.Profesor as Profesor, A.Opinion as Opinion , (SELECT concat_ws(' ', B.Titulo, B.Nombre) FROM profesor B WHERE B.Id_profesor=A.Profesor) as Nombre FROM calificacion A WHERE A.Materia = :materia";
         //$registros=$base->query($sql)->fetchAll((PDO::FETCH_OBJ));
         $resultado=$base->prepare($sql1);
         $resultado->bindValue(":materia",$subject);
