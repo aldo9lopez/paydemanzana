@@ -11,6 +11,8 @@
     }
 
     require("model/usuario/ver_perfil.php");
+    require_once("model/data/publicar_post.php");
+    require_once("model/data/borrar_post.php");
     $titulo= "Inicio";
 
     require_once("view/common/head/head_index.php");
@@ -33,5 +35,6 @@
     <?php
         require_once("view/common/footer/footer_index.html");
     ?>
+    <script src="js/index.js"></script>
 </body>
 </html>

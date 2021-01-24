@@ -178,7 +178,7 @@
         ?>
         <div class="sin-info">
             <span class="no-info">
-                <i>Aún no hay información acerca de esta materia</i>
+                <i>Aún no hay información acerca de este profesor</i>
             </span>
         </div>
         <?php

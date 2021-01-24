@@ -7,9 +7,219 @@
     display: flex
     .posts
         width: 70%
-        background: $azul-1
         margin: 0px 10px 0px 0px
+        .publicar
+            width: 100%
+            margin: 0px auto 15px auto
+            background: #FFFFFF
+            box-sizing: border-box
+            border-radius: 10px
+            .principal
+                width: 100%
+                padding: 20px 10px 10px 10px
+                box-sizing: border-box
+                textarea
+                    background: #FFFFFF
+                    width: 85%
+                    border-radius: 5px 
+                    box-sizing: border-box
+                    border: 1px solid $rojo-1
+                    font-size: 15px
+                    padding: 10px 7px
+                    resize: none
+                    font-family: $font-1
+                textarea:hover
+                    border-color: $rojo-2
+                textarea:focus
+                    border: 1px solid $rojo-2
+                    box-shadow: 0px 0px 8px $rojo-2
+                    outline: none
+                img
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    object-fit: cover
+                    vertical-align: top
 
+            .separador
+                width: 100%
+                height: fit-content
+                background: $azul-3
+                box-sizing: border-box
+                border-bottom-left-radius: 10px
+                border-bottom-right-radius: 10px
+                text-align: center
+                input[type="file"]
+                    width: 0.1px
+                    height: 0.1px
+                    opacity: 0
+                    overflow: hidden
+                    position: absolute
+                    z-index: -1
+                label[for="imagen"]
+                    font-size: 15px
+                    padding: 10px 20px
+                    width: 50%
+                    margin: 0px 5%
+                    color: $gris-3
+                    font-family: $font-2
+                label[for="imagen"]:hover, input[type="submit"]:hover
+                    color: $rojo-1
+                    cursor: pointer
+                input[type="submit"]
+                    font-size: 15px
+                    padding: 10px 20px
+                    background: $azul-3
+                    border: 0
+                    margin: 0px 5%
+                    color: $gris-3
+                    font-family: $font-2
+        .post
+            width: 100%
+            margin: 0px auto 15px auto
+            background: #FFFFFF
+            box-sizing: border-box
+            border-radius: 10px
+            .principal
+                width: 100%
+                padding: 20px 10px 10px 10px
+                box-sizing: border-box
+                display: flex
+                .info-area
+                    width: 85%
+                    box-sizing: border-box
+                    margin: 0px 0px 0px 5px
+                    .info-head
+                        a
+                            font-size: 16px
+                            font-family: $font-2
+                            color: $azul-2
+                            text-decoration: none
+                            margin: 0px 10px 0px 0px
+                        a:hover
+                            text-decoration: underline
+                        .info-hora
+                            font-size: 15px
+                            color: $gris-2
+                    .comentario
+                        margin: 5px 0px
+                    img[class="img-post"]
+                        width: 80%
+                        max-width: 500px
+                    .info-mancom
+                        margin: 20px 0px 0px 0px
+                        font-size: 14px
+                        img, i
+                            vertical-align: middle
+                        .info-man
+                            margin: 0px 5px 0px 0px
+                        
+
+                img[class="foto-perfil"]
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    object-fit: cover
+                    vertical-align: top
+                form
+                    display: inline
+                    float: right
+                    button
+                        color: $gris-3
+                        border: 0
+                        padding: 5px 5px
+                        vertical-align: middle
+                        background: #FFFFFF
+                    button:hover
+                        cursor: pointer
+                        color: $rojo-1
+
+
+            .separador
+                width: 100%
+                height: fit-content
+                padding: 5px 0px 10px 0px
+                background: $azul-3
+                box-sizing: border-box
+                border-bottom-left-radius: 10px
+                border-bottom-right-radius: 10px
+                text-align: center
+                input[type="checkbox"]
+                    width: 0.1px
+                    height: 0.1px
+                    opacity: 0
+                    overflow: hidden
+                    position: absolute
+                    z-index: -1
+                label
+                    font-size: 15px
+                    padding: 10px 20px
+                    width: 50%
+                    margin: 0px 5%
+                    color: $gris-3
+                    font-family: $font-2
+                    img
+                        vertical-align: bottom
+                label:hover, a:hover
+                    color: $rojo-1
+                    cursor: pointer
+                a
+                    font-size: 15px
+                    padding: 10px 20px
+                    margin: auto 5%
+                    color: $gris-3
+                    text-decoration: none
+                    font-family: $font-2
+        .paginacion
+            margin: 20px auto 0px auto
+            width: fit-content
+            a
+                font-size: 15px
+                font-family: $font-2
+                text-decoration: none
+                color: #FFFFFF
+                padding: 6px 20px
+                border-radius: 10px
+                background: $rojo-1
+                margin: 0px 5px
+            a:hover
+                background: $rojo-2
     .stats
         width: 30%
         margin: 0px 0px 0px 10px
+        box-sizing: border-box
+        div
+            width: 90%
+            margin: 0px auto 15px auto
+            background: #FFFFFF
+            padding: 10px
+            border-radius: 10px
+            table
+                .titulo
+                    font-size: 16px
+                    font-family: $font-2
+                .nombre
+                    width: 60%
+                a
+                    text-decoration: none
+                    color: $azul-2
+                a:hover
+                    text-decoration: underline
+                .estrella
+                    color: orange
+                    font-size: 18px
+                .manzanas
+                    img
+                        vertical-align: middle
+
+@media screen and ( max-width: 1000px )
+    .espacio
+        display: block
+        .posts
+            width: 100%
+            .publicar
+                .principal
+                    textarea
+                        width: 80%
+        .stats
+            display: none
