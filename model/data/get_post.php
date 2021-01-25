@@ -5,7 +5,7 @@
         $pagina=$_GET["pag"];
     }
     $sql1="SELECT A.Id_post, A.Comentario, A.Fecha, A.Hora, A.Imagen_ruta,A.Usuario, 
-    (SELECT CONCAT(B.Nombre,' ',B.Apellido) FROM Usuario B WHERE B.No_control=A.Usuario) AS Nombre,
+    (SELECT CONCAT(B.Nombre,' ',B.Apellido) FROM usuario B WHERE B.No_control=A.Usuario) AS Nombre,
     (SELECT P.Imagen_ruta FROM usuario_presentacion P WHERE P.Usuario=A.Usuario) As Foto,
     (SELECT COUNT(*) FROM post_manzana M WHERE M.Post = A.Id_post) AS Manzanas,
     (SELECT COUNT(*) FROM post_comentario H WHERE H.Post=A.Id_post) AS Comentarios,
