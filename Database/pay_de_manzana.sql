@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-01-2021 a las 20:55:09
+-- Tiempo de generación: 27-01-2021 a las 22:54:20
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.1
 
@@ -70,7 +70,36 @@ INSERT INTO `calificacion` (`Id_calificacion`, `Usuario`, `Estatus`, `Materia`, 
 (24, 'Y6aXpJ53Zns=', 'Aprobada', 21, 145, 3, 'No llegues tarde nunca!', 'No'),
 (25, 'Y6aXpJ53Zns=', 'Aprobada', 19, 20, 4, 'Bien, en general', 'No'),
 (26, 'Y6aXo6B0ZHY=', 'Aprobada', 1, 115, 4, 'Lo normal', 'No'),
-(27, 'Y6iZoqFxbHQ=', 'Aprobada', 54, 18, 3, 'Masomenos', 'No');
+(27, 'Y6iZoqFxbHQ=', 'Aprobada', 54, 18, 3, 'Masomenos', 'No'),
+(28, 'Y6aXo6B0ZHY=', 'Reprobada', 10, 71, 2, 'Muy mala maestra', 'Mala'),
+(29, 'Y6aXo6B0ZHY=', 'Aprobada', 10, 72, 4, 'Buen profesor', 'Buena'),
+(30, 'Y6OXpJ50Z3c=', 'Aprobada', 10, 71, 1, 'Mala profesora', 'Mala'),
+(31, 'Y6aXpJ53Zns=', 'Aprobada', 15, 145, 4, 'La materia estuvo bien, buen profesor', 'No'),
+(32, 'Y6aXo6B0ZHY=', 'Aprobada', 15, 145, 4, 'Se aprende bien en esta materia', 'Buena'),
+(33, 'Y6aXo6B0ZHY=', 'Aprobada', 21, 145, 2, 'No se aprende mucho', 'No'),
+(34, 'Y6OXpJ50Z3c=', 'Aprobada', 15, 145, 4, 'Buen profesor en esta materia', 'No'),
+(35, 'Y6OXpJ50Z3c=', 'Reprobada', 21, 145, 2, 'Es demasiado estricto con la hora de entrada, no llegues ni un solo segundo tarde', 'Mala'),
+(36, 'Y6OXpJ50Z3c=', 'Aprobada', 21, 145, 3, 'No es dificil la materia pero hay que tener cuidado con la hora', 'Mala'),
+(37, 'Y6OXpJ50Z3c=', 'Aprobada', 25, 145, 4, 'Cumple con las practicas y pasaras sin problemas', 'No'),
+(38, 'Y6aXo6B0ZHY=', 'Reprobada', 9, 156, 2, 'Mal profesor', 'Mala'),
+(39, 'Y6aXo6B0ZHY=', 'Aprobada', 9, 93, 4, 'Bueno en general', 'No'),
+(40, 'Y6aXo6B0ZHY=', 'Aprobada', 25, 251, 5, 'Buena profesora', 'Buena'),
+(41, 'Y6aXo6B0ZHY=', 'Aprobada', 2, 88, 2, 'No es muy buena profesora', 'No'),
+(42, 'Y6aXo6B0ZHY=', 'Reprobada', 28, 75, 2, 'Mala opción', 'Mala'),
+(43, 'Y6aXo6B0ZHY=', 'Aprobada', 28, 33, 3, '', 'No'),
+(44, 'Y6aXo6B0ZHY=', 'Aprobada', 33, 74, 4, 'Buena opción', 'Buena'),
+(45, 'Y6aXo6B0ZHY=', 'Aprobada', 30, 59, 1, 'Mal en todo', 'Mala'),
+(46, 'Y6aXpJ53Zns=', 'Aprobada', 32, 61, 3, 'No recomiendo mucho tomar con esta maestra', 'No'),
+(47, 'Y6aXpJ53Zns=', 'Aprobada', 29, 60, 2, 'Poco y nada se aprende', 'No'),
+(48, 'Y6aXpJ53Zns=', 'Aprobada', 26, 61, 4, 'Ni bien ni mal', 'No'),
+(49, 'Y6aXpJ53Zns=', 'Aprobada', 35, 60, 2, 'No recomendada', 'No'),
+(50, 'Y6aXpJ53Zns=', 'Aprobada', 36, 88, 2, 'Hay mejores opciones', 'No'),
+(51, 'Y6aXpJ53Zns=', 'Aprobada', 38, 76, 4, 'Buena profesora para esta materia', 'Buena'),
+(52, 'Y6aXpJ53Zns=', 'Aprobada', 39, 74, 5, 'Buen profesor', 'No'),
+(53, 'Y6aXpJ53Zns=', 'Aprobada', 40, 84, 2, 'Mala opción', 'No'),
+(54, 'Y6aXpJ53Zns=', 'Aprobada', 42, 88, 2, 'No recomendada', 'Mala'),
+(55, 'Y6aXpJ53Zns=', 'Aprobada', 41, 78, 2, 'No es muy buena profesora no se aprende mucho', 'No'),
+(56, 'Y6iZoqFxbHQ=', 'Aprobada', 53, 44, 4, '', 'Buena');
 
 -- --------------------------------------------------------
 
@@ -287,6 +316,34 @@ CREATE TABLE `post` (
   `Imagen_ruta` varchar(100) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `post`
+--
+
+INSERT INTO `post` (`Id_post`, `Usuario`, `Carrera`, `Fecha`, `Hora`, `Comentario`, `Imagen_ruta`) VALUES
+(1, '17240637', 1, '2021-01-21', '22:50:53', 'Este es el primer post', ''),
+(6, '17240637', 1, '2021-01-21', '22:57:04', 'Cuarta prueba con imagen', 'uploads/post/6.png'),
+(8, '17240637', 1, '2021-01-22', '12:51:15', 'Una nueva pruebaaa', ''),
+(9, '17240637', 1, '2021-01-22', '13:13:20', 'Hola, nueva prueba', ''),
+(12, '14240343', 1, '2021-01-22', '18:52:56', 'La neta no se que poner', ''),
+(13, '17240637', 1, '2021-01-22', '18:54:06', 'Uff', 'uploads/post/13.jpg'),
+(14, '14240343', 1, '2021-01-22', '18:54:48', 'Q oso ser Gamiño', ''),
+(15, '17232312', 1, '2021-01-22', '18:56:07', 'Corre corre corre corazon  ❤', ''),
+(16, '17240637', 1, '2021-01-22', '20:41:30', 'La neta que me caga que se tome tan a la ligera el abuso de drogas, INCLUyeNDO la marihuana, no es una droga inofensiva, dejen de promocionarla como si fuera inofensiva', ''),
+(17, '17240637', 1, '2021-01-22', '20:42:18', 'Super yo', 'uploads/post/17.jpg'),
+(19, '17240637', 1, '2021-01-22', '23:23:28', 'Nuevo post', ''),
+(20, '17240637', 1, '2021-01-22', '23:29:26', 'No puede ser', ''),
+(21, '14240343', 1, '2021-01-22', '23:30:01', 'Que onda @todos', ''),
+(22, '14240343', 1, '2021-01-22', '23:30:49', '???????????????????? Hola', ''),
+(23, '14240343', 1, '2021-01-22', '23:31:07', '???? like', ''),
+(24, '14240343', 1, '2021-01-22', '23:31:25', '????????', ''),
+(25, '14240343', 1, '2021-01-22', '23:31:38', '????', ''),
+(26, '14240343', 1, '2021-01-22', '23:32:21', '', 'uploads/post/26.jpg'),
+(27, '14240343', 1, '2021-01-22', '23:32:47', '★  manzana', ''),
+(28, '14240343', 1, '2021-01-22', '23:33:02', 'Quien esta', ''),
+(29, '14240343', 1, '2021-01-22', '23:33:17', 'Uno mas', ''),
+(30, '14240343', 1, '2021-01-25', '18:53:54', 'Que onda', '');
+
 -- --------------------------------------------------------
 
 --
@@ -301,6 +358,32 @@ CREATE TABLE `post_comentario` (
   `Comentario` varchar(400) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `post_comentario`
+--
+
+INSERT INTO `post_comentario` (`Post`, `Usuario`, `Fecha`, `Hora`, `Comentario`) VALUES
+(16, '17240637', '2021-01-25', '18:35:48', 'La neta si'),
+(16, '17240637', '2021-01-25', '18:36:02', 'Extraño pero si'),
+(17, '17240637', '2021-01-25', '18:50:52', 'Que padre'),
+(16, '14240343', '2021-01-25', '18:53:03', 'Qu pedo con eso'),
+(16, '14240343', '2021-01-25', '18:53:14', 'Tienes razón'),
+(29, '14240343', '2021-01-25', '18:53:49', '2 mas'),
+(30, '14240343', '2021-01-25', '18:54:00', 'Qpasa'),
+(30, '14240343', '2021-01-25', '18:55:18', 'Hola'),
+(30, '17240637', '2021-01-25', '18:55:43', 'Que ondaa\r\n'),
+(29, '17240637', '2021-01-25', '18:57:11', '3 mas'),
+(15, '17240637', '2021-01-25', '19:48:38', 'Holaaa'),
+(15, '17240637', '2021-01-25', '19:48:54', 'Que pd'),
+(20, '17240637', '2021-01-25', '19:49:12', 'Noo'),
+(17, '17232312', '2021-01-25', '19:50:24', 'Es cierto'),
+(27, '17232312', '2021-01-26', '14:43:28', 'Que pasa hombre'),
+(17, '17232312', '2021-01-26', '14:44:14', 'Muy bien'),
+(13, '14240343', '2021-01-26', '15:54:35', 'Ufff'),
+(13, '14240343', '2021-01-26', '15:57:10', 'Bien bien'),
+(13, '14240343', '2021-01-26', '15:58:29', 'Bien'),
+(19, '14240343', '2021-01-26', '16:00:50', 'Holaa');
+
 -- --------------------------------------------------------
 
 --
@@ -313,6 +396,43 @@ CREATE TABLE `post_manzana` (
   `Manzana` enum('Buena','Mala') COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+--
+-- Volcado de datos para la tabla `post_manzana`
+--
+
+INSERT INTO `post_manzana` (`Post`, `Usuario`, `Manzana`) VALUES
+(13, '17240637', 'Buena'),
+(14, '14240343', 'Buena'),
+(15, '14240343', 'Buena'),
+(13, '14240343', 'Buena'),
+(14, '17232312', 'Buena'),
+(12, '17240637', 'Buena'),
+(6, '17240637', 'Buena'),
+(17, '14240343', 'Buena'),
+(16, '14240343', 'Buena'),
+(14, '19423090', 'Buena'),
+(13, '19423090', 'Buena'),
+(28, '17240637', 'Buena'),
+(16, '17240637', 'Buena'),
+(30, '14240343', 'Buena'),
+(29, '17240637', 'Buena'),
+(27, '17240637', 'Buena'),
+(30, '17240637', 'Buena'),
+(26, '17240637', 'Buena'),
+(24, '17240637', 'Buena'),
+(23, '17240637', 'Buena'),
+(20, '17240637', 'Buena'),
+(15, '17240637', 'Buena'),
+(17, '17240637', 'Buena'),
+(14, '17240637', 'Buena'),
+(20, '17232312', 'Buena'),
+(27, '17232312', 'Buena'),
+(17, '17232312', 'Buena'),
+(16, '17232312', 'Buena'),
+(9, '14240343', 'Buena'),
+(20, '14240343', 'Buena'),
+(19, '14240343', 'Buena');
+
 -- --------------------------------------------------------
 
 --
@@ -322,8 +442,21 @@ CREATE TABLE `post_manzana` (
 CREATE TABLE `post_notificacion` (
   `Post` int(11) NOT NULL,
   `Usuario` char(8) COLLATE utf8_spanish_ci NOT NULL,
-  `Personas` int(11) NOT NULL
+  `Personas` int(11) NOT NULL,
+  `Fecha` date NOT NULL,
+  `Hora` time NOT NULL,
+  `Tipo` enum('Manzana','Comentario') COLLATE utf8_spanish_ci NOT NULL,
+  `Visto` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `post_notificacion`
+--
+
+INSERT INTO `post_notificacion` (`Post`, `Usuario`, `Personas`, `Fecha`, `Hora`, `Tipo`, `Visto`) VALUES
+(20, '17240637', 3, '2021-01-26', '16:00:45', 'Manzana', 1),
+(19, '17240637', 1, '2021-01-26', '16:00:46', 'Manzana', 1),
+(19, '17240637', 1, '2021-01-26', '16:00:50', 'Comentario', 1);
 
 -- --------------------------------------------------------
 
@@ -744,6 +877,7 @@ ALTER TABLE `carrera`
 ALTER TABLE `materia`
   ADD PRIMARY KEY (`Id_materia`),
   ADD KEY `Carrera` (`Carrera`);
+ALTER TABLE `materia` ADD FULLTEXT KEY `Nombre_materia` (`Nombre_materia`);
 
 --
 -- Indices de la tabla `post`
@@ -778,6 +912,7 @@ ALTER TABLE `post_notificacion`
 --
 ALTER TABLE `profesor`
   ADD PRIMARY KEY (`Id_profesor`);
+ALTER TABLE `profesor` ADD FULLTEXT KEY `Nombre` (`Nombre`);
 
 --
 -- Indices de la tabla `profesor_carrera`
@@ -792,6 +927,7 @@ ALTER TABLE `profesor_carrera`
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`No_control`),
   ADD KEY `Carrera` (`Carrera`);
+ALTER TABLE `usuario` ADD FULLTEXT KEY `Nombre` (`Nombre`,`Apellido`);
 
 --
 -- Indices de la tabla `usuario_password`
@@ -819,7 +955,7 @@ ALTER TABLE `usuario_verificar`
 -- AUTO_INCREMENT de la tabla `calificacion`
 --
 ALTER TABLE `calificacion`
-  MODIFY `Id_calificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `Id_calificacion` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT de la tabla `carrera`
@@ -837,7 +973,7 @@ ALTER TABLE `materia`
 -- AUTO_INCREMENT de la tabla `post`
 --
 ALTER TABLE `post`
-  MODIFY `Id_post` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id_post` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT de la tabla `profesor`

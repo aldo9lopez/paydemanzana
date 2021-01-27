@@ -22,7 +22,7 @@ if ($subjectcareer != $carrera) {
     header("location:../login");
 }
 
-$titulo = "Calificar - $subjectname";
+$titulo = "Calificar - $subjectname | Pay de Manzana";
 
 require_once("../view/common/head/head_folder.php");
 ?>

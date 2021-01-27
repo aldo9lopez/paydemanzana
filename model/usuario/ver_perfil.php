@@ -27,4 +27,12 @@
     $careername = $registro["Nombre_carrera"];
     $careersem = $registro["Semestres"];
 
+    $sql="SELECT COUNT(*) FROM post_notificacion WHERE Usuario=:usuario AND Visto=0";
+    $resultado=$base->prepare($sql);
+    $resultado->bindValue(":usuario",$usuario);
+    $resultado->execute();
+    $registro=$resultado->fetch((PDO::FETCH_ASSOC));
+
+    $notifications = $registro["COUNT(*)"];
+
 ?>

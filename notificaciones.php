@@ -11,13 +11,13 @@
     }
 
     require("model/usuario/ver_perfil.php");
-    require_once("model/data/publicar_post.php");
-    require_once("model/data/borrar_post.php");
-    $titulo= "Inicio | Pay de Manzana";
+
+    $titulo= "Notificaciones | Pay de Manzana";
 
     require_once("view/common/head/head_index.php");
 ?>
     <link href="style/index.css" rel="stylesheet">
+    <link href="style/notificaciones.css" rel="stylesheet">
 
 </head>
 <body>
@@ -28,13 +28,12 @@
         <div class="contenido">
             <?php
                 require_once("view/common/sidebar/side_index.php");
-                require_once("view/index.php");
+                require_once("view/notificaciones.php");
             ?>
         </div>
     </div>
     <?php
         require_once("view/common/footer/footer_index.html");
     ?>
-    <script src="js/index.js"></script>
 </body>
 </html>

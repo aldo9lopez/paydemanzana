@@ -12,7 +12,7 @@
 
     require("../model/usuario/ver_perfil.php");
     require("../model/Buscar/busqueda.php");
-    $titulo= "Buscar - $search en $searchtype";
+    $titulo= "Buscar - $search en $searchtype | Pay de Manzana";
 
     require_once("../view/common/head/head_folder.php");
 ?>

@@ -12,7 +12,7 @@
 
     require("../model/usuario/ver_perfil.php");
     require("../model/Buscar/ver_profesor.php");
-    $titulo= "Profesor - $teachername";
+    $titulo= "Profesor - $teachername | Pay de Manzana";
     if($teachergender=="Femenino"){
         $titulo= "Profesora - $teachername";
     }

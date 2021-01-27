@@ -12,7 +12,7 @@
 
     require("../model/usuario/ver_perfil.php");
     require("../model/Buscar/ver_materia.php");
-    $titulo= "Materia - $subjectname";
+    $titulo= "Materia - $subjectname | Pay de Manzana";
 
     require_once("../view/common/head/head_folder.php");
 ?>

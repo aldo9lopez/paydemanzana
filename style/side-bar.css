@@ -85,6 +85,16 @@ body .main {
   vertical-align: middle;
 }
 
+.main .contenido .sidebar ul li a .notificaciones {
+  background: #ffffff;
+  color: #db4545;
+  padding: 1px 6px 1px 5px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-family: Proxima Nova Bold;
+  float: right;
+}
+
 .main .contenido .sidebar ul li a:hover {
   padding: 15px 10px;
 }

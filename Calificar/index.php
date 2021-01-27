@@ -11,7 +11,7 @@
     }
 
     require("../model/usuario/ver_perfil.php");
-    $titulo= "Calificar - $careername";
+    $titulo= "Calificar - $careername | Pay de Manzana";
 
     require_once("../view/common/head/head_folder.php");
 ?>

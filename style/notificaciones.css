@@ -1,0 +1,68 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.espacio .posts a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.espacio .posts a div {
+  width: 100%;
+  margin: 0px auto 15px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px 20px 10px 10px;
+  line-height: 30px;
+}
+
+.espacio .posts a div i {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.espacio .posts a div img {
+  vertical-align: middle;
+}
+
+.espacio .posts a div .hora {
+  font-size: 15px;
+  color: #7e7e7e;
+  float: right;
+}
+
+.espacio .posts a .notificacion-novisto {
+  background: #fff0f0;
+}
+
+.espacio .posts a .notificacion-visto {
+  background: #ffffff;
+}
+/*# sourceMappingURL=notificaciones.css.map */

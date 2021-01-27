@@ -14,7 +14,7 @@
     }
     $semestre = $_GET["id"];
     require("../model/usuario/ver_perfil.php");
-    $titulo= "Calificar - Semestre $semestre";
+    $titulo= "Calificar - Semestre $semestre | Pay de Manzana";
 
     require_once("../view/common/head/head_folder.php");
 ?>

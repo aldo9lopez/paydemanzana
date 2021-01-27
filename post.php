@@ -12,12 +12,13 @@
 
     require("model/usuario/ver_perfil.php");
     require_once("model/data/ver_post.php");
-    require_once("model/data/borrar_post.php");
-    $titulo= "$post_nombre: $post_corto";
+    require_once("model/data/comentar.php");
+    $titulo= "$post_nombre: $post_txt_corto | Pay de Manzana";
 
     require_once("view/common/head/head_index.php");
 ?>
     <link href="style/index.css" rel="stylesheet">
+    <link href="style/post.css" rel="stylesheet">
 
 </head>
 <body>

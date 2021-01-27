@@ -1,0 +1,84 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.espacio .posts .comentario {
+  width: 100%;
+  margin: 0px auto 15px auto;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.espacio .posts .comentario .principal {
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.espacio .posts .comentario .principal .info-area {
+  width: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px 0px 0px 5px;
+}
+
+.espacio .posts .comentario .principal .info-area .info-head a {
+  font-size: 16px;
+  font-family: Proxima Nova Bold;
+  color: #346ca0;
+  text-decoration: none;
+  margin: 0px 10px 0px 0px;
+}
+
+.espacio .posts .comentario .principal .info-area .info-head a:hover {
+  text-decoration: underline;
+}
+
+.espacio .posts .comentario .principal .info-area .info-head .info-hora {
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+.espacio .posts .comentario .principal .info-area .comentario {
+  margin: 5px 0px;
+}
+
+.espacio .posts .comentario .principal img[class="foto-perfil"] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+}
+/*# sourceMappingURL=post.css.map */
