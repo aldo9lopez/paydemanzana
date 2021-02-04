@@ -82,7 +82,7 @@ if(isset($_POST["registrarse"])){
 
             $mail->send();
             
-            header("Location:login?success=13");
+            echo '<script> window.location.replace("login?success=13")</script>';
             }catch(Exception $e){
                 $mensaje = $e->getMessage();
                 if(strpos($mensaje,'Duplicate') !== false){

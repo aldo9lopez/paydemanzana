@@ -39,7 +39,7 @@
                 
                 $resultado->execute();
                 
-                header("Location:semestre?id=$subjectsem");
+                echo '<script> window.location.replace("semestre?id='. $subjectsem . '")</script>';
 
             }
 

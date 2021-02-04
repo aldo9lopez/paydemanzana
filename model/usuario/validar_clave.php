@@ -30,7 +30,7 @@ if(isset($_POST["enviar"])){
             session_start();
             $_SESSION["usuario"] = $_POST["usuario"];
             $_SESSION["tipo"] = $tipo;
-            header("Location:index");
+            echo '<script> window.location.replace("index")</script>';
         }catch(Exception $e){
             echo '<script type="text/javascript">';
             echo 'window.alert("'. $e->getMessage() .'");';

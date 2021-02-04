@@ -1,6 +1,6 @@
 <?php
     if(!isset($_GET["id"])){
-        header("Location:../");
+        echo '<script> window.location.replace("../")</script>';
     }
     require("../model/data/get_profesor.php");
 

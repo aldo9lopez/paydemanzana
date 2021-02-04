@@ -30,7 +30,7 @@
 
             $resultado->execute();
                 
-            header("Location:calificar?materia=$reg_materia");
+            echo '<script> window.location.replace("calificar?materia='.$reg_materia.'")</script>';
 
         }catch(Exception $e){
             $mensaje = $e->getMessage();
