@@ -82,7 +82,7 @@ if(isset($_POST["registrarse"])){
 
             $mail->send();
             
-            header("location: login?success=13");
+            header("location:login?success=13");
             }catch(Exception $e){
                 $mensaje = $e->getMessage();
                 if(strpos($mensaje,'Duplicate') !== false){
