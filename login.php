@@ -12,6 +12,7 @@
     <script src="js/login-head.js"></script>
 
 <?php
+
     require_once("model/usuario/verificar_sesion.php");
     if(session_status()!=2){
         session_start();
