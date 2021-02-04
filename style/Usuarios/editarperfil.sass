@@ -1,0 +1,80 @@
+@import "../main.sass"
+.area
+    .principal-perfil
+        width: 100%
+        padding: 10px 20px
+        background: #FFFFFF
+        box-sizing: border-box
+        border-radius: 10px
+        text-align: center
+        margin: 0px auto 10px auto
+        .head-info
+            img
+                width: 150px
+                height: 150px
+                border-radius: 50%
+                border: 3px solid #ffffff
+                object-fit: cover
+            h2
+                font-size: 30px
+            input[type="file"]
+                width: 0.1px
+                height: 0.1px
+                opacity: 0
+                overflow: hidden
+                position: absolute
+                z-index: -1
+            label[for="inpFile"]
+                padding: 3px 5px
+                color: $rojo-1
+                border-radius: 10px
+                border: 2px solid $rojo-1
+                text-decoration: none
+            label[for="inpFile"]:hover
+                color: $gris-2
+                border-color: $gris-2
+                cursor: pointer
+        .descripcion
+            margin: 30px auto
+            textarea
+                background: #FFFFFF
+                width: 80%
+                display: block
+                border-radius: 5px 
+                box-sizing: border-box
+                border: 1px solid $rojo-1
+                font-size: 15px
+                padding: 10px 7px
+                resize: none
+                font-family: $font-1
+                margin: 0px auto
+            textarea:hover
+                border-color: $rojo-2
+            textarea:focus
+                border: 1px solid $rojo-2
+                box-shadow: 0px 0px 8px $rojo-2
+                outline: none
+        .boton
+            margin: 0px auto 20px auto
+            input[type="submit"]
+                display: block
+                margin: 0px auto 0px auto
+                font-size: 15px
+                font-family: $font-2
+                color: #ffffff
+                border: 0
+                border-radius: 10px
+                background: $rojo-1
+                justify-content: center
+                align-items: center
+                padding: 8px 15px
+            input[type="submit"]:hover
+                background: $rojo-2
+                cursor: pointer
+                color: $gris-3
+            input[type="submit"]:focus
+                box-shadow: 0px 0px 8px $rojo-2
+            
+
+
+

@@ -51,6 +51,15 @@ if(isset($_POST["registrarse"])){
             $resultado->bindValue(":clave",$clave);
             
             $resultado->execute();
+
+            $subject = "Código de activación para Pay de Manzana";
+            $message = "Su código de verificación es: $clave \n\n ¡Gracias por usar Pay de Manzana!";
+            $header = "From: soporte@paydmanzana.com" . "\r\n";
+            $header .= "Reply-To: soporte@paydmanzana.com" . "\r\n";
+            $header .= "X-Mailer: PHP/" . phpversion();
+
+            $mail = @mail($correo,$asunto,$msg,$header);
+
             header("location: login?success=13");
             }catch(Exception $e){
                 $mensaje = $e->getMessage();

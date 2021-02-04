@@ -1,0 +1,167 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.area .info-stat {
+  width: 100%;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.area .info-stat .posiciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 20px auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.area .info-stat .posiciones .carrera {
+  margin: 0px 20px;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #00a329;
+  border-radius: 50%;
+}
+
+.area .info-stat .posiciones .carrera h4 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.area .info-stat .posiciones .carrera .stat {
+  font-size: 18px;
+  font-family: Proxima Nova Bold;
+  color: #00a329;
+  margin: 10px auto;
+  display: block;
+}
+
+.area .info-stat .posiciones .carrera .posicion .pos {
+  display: block;
+  margin: 10px auto;
+}
+
+.area .info-stat .posiciones .carrera .posicion .numero {
+  font-size: 50px;
+  color: #00a329;
+}
+
+.area .info-stat .posiciones .general {
+  margin: 0px 20px;
+  padding: 20px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #db4545;
+  border-radius: 50%;
+}
+
+.area .info-stat .posiciones .general h4 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.area .info-stat .posiciones .general .stat {
+  font-size: 18px;
+  font-family: Proxima Nova Bold;
+  color: #db4545;
+  margin: 10px auto;
+  display: block;
+}
+
+.area .info-stat .posiciones .general .posicion .pos {
+  display: block;
+  margin: 10px auto;
+}
+
+.area .info-stat .posiciones .general .posicion .numero {
+  font-size: 50px;
+  color: #db4545;
+}
+
+.area .info-stat .posiciones div[name="circulo-1"] {
+  border: 2px solid #00a329;
+}
+
+.area .info-stat .posiciones div[name="circulo-1"] .stat {
+  color: #00a329;
+}
+
+.area .info-stat .posiciones div[name="circulo-1"] .posicion .numero {
+  color: #00a329;
+}
+
+.area .info-stat .posiciones div[name="circulo-2"] {
+  border: 2px solid #346ca0;
+}
+
+.area .info-stat .posiciones div[name="circulo-2"] .stat {
+  color: #346ca0;
+}
+
+.area .info-stat .posiciones div[name="circulo-2"] .posicion .numero {
+  color: #346ca0;
+}
+
+.area .info-stat .posiciones div[name="circulo-3"] {
+  border: 2px solid #db4545;
+}
+
+.area .info-stat .posiciones div[name="circulo-3"] .stat {
+  color: #db4545;
+}
+
+.area .info-stat .posiciones div[name="circulo-3"] .posicion .numero {
+  color: #db4545;
+}
+
+.area .info-stat table {
+  margin: 40px auto;
+}
+
+.area .info-stat table td {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .area .info-stat .posiciones {
+    display: block;
+  }
+  .area .info-stat .posiciones .carrera {
+    margin: 20px auto;
+  }
+}
+/*# sourceMappingURL=popularidad.css.map */

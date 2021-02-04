@@ -1,0 +1,138 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.area .principal-perfil {
+  width: 100%;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.area .principal-perfil .head-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.area .principal-perfil .head-info h2 {
+  font-size: 30px;
+}
+
+.area .principal-perfil .head-info input[type="file"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.area .principal-perfil .head-info label[for="inpFile"] {
+  padding: 3px 5px;
+  color: #db4545;
+  border-radius: 10px;
+  border: 2px solid #db4545;
+  text-decoration: none;
+}
+
+.area .principal-perfil .head-info label[for="inpFile"]:hover {
+  color: #7e7e7e;
+  border-color: #7e7e7e;
+  cursor: pointer;
+}
+
+.area .principal-perfil .descripcion {
+  margin: 30px auto;
+}
+
+.area .principal-perfil .descripcion textarea {
+  background: #FFFFFF;
+  width: 80%;
+  display: block;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #db4545;
+  font-size: 15px;
+  padding: 10px 7px;
+  resize: none;
+  font-family: ProximaNova-Regular;
+  margin: 0px auto;
+}
+
+.area .principal-perfil .descripcion textarea:hover {
+  border-color: #f8b1b1;
+}
+
+.area .principal-perfil .descripcion textarea:focus {
+  border: 1px solid #f8b1b1;
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+  outline: none;
+}
+
+.area .principal-perfil .boton {
+  margin: 0px auto 20px auto;
+}
+
+.area .principal-perfil .boton input[type="submit"] {
+  display: block;
+  margin: 0px auto 0px auto;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  background: #db4545;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 15px;
+}
+
+.area .principal-perfil .boton input[type="submit"]:hover {
+  background: #f8b1b1;
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+.area .principal-perfil .boton input[type="submit"]:focus {
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+}
+/*# sourceMappingURL=editarperfil.css.map */

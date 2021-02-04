@@ -26,7 +26,6 @@
         
                 if($tamano_file<=5000000 ){
                         $ruta = "uploads/post/$nombre_file";
-                        require_once("controller/uploads.php");
                         //Ruta de la carpeta de destino
                         $destino= $ruta_servidor . 'post/';
                         //Carpeta temporal a carpeta de destino

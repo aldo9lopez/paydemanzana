@@ -8,7 +8,7 @@
                 <img src="uploads/profile-images/<?php echo $post_foto_perfil;?>" alt="img-post-profile" class="foto-perfil">
                 <div class="info-area">
                     <div class="info-head">
-                            <a href="#?id=<?php echo $post_usuario?>"><?php echo $post_nombre?></a>
+                            <a href="Usuarios/?id=<?php echo $post_usuario?>"><?php echo $post_nombre?></a>
                             <?php
                                 date_default_timezone_set("America/Mexico_City");
                                 $fecha = obtenerFecha($post_fecha . $post_hora,date('G:i:s') . date("y-n-j"));

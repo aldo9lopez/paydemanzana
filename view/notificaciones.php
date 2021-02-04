@@ -27,14 +27,14 @@
                         if($notificacion->Tipo=='Manzana'){
                             ?>
                             <img src="images/ico-man-buena.PNG" alt="manzana-b" width="30px">
-                            <i>Tienes <?php echo $notificacion->Personas;?> manzana(s) en tu post</i>
+                            <i>Alguien le dió una manzana a tu post</i>
                             <span class="hora"><?php echo $fecha;?></span>
                             <?php
                         }else{
 
                             ?>
                             <i class="material-icons">comment</i>
-                            <i>Tienes <?php echo $notificacion->Personas;?> comentario(s) en tu post</i>
+                            <i>Aguien hizo un comentario en tu post</i>
                             <span class="hora"><?php echo $fecha;?></span>
                             <?php
                             
@@ -45,6 +45,9 @@
                 </a>
 
                 <?php
+            }
+            if($total_paginas==0){
+                echo '<p style="text-align: center;">No tienes notificaciones aún</p>';
             }
         ?>
         <div class="paginacion">

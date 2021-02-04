@@ -1,6 +1,5 @@
 <?php
     require_once("controller/conexion.php");
-    require_once("controller/uploads.php");
     require_once("model/usuario/verificar_sesion.php");
     if(session_status()!=2){
         session_start();
@@ -12,13 +11,12 @@
     }
 
     require("model/usuario/ver_perfil.php");
-    require_once("model/data/publicar_post.php");
-    require_once("model/data/borrar_post.php");
-    $titulo= "Inicio | Pay de Manzana";
+    $titulo= "Ayuda | Pay de Manzana";
 
     require_once("view/common/head/head_index.php");
 ?>
-    <link href="style/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/Usuarios/main.css">
+    <link href="style/ayuda.css" rel="stylesheet">
 
 </head>
 <body>
@@ -29,7 +27,7 @@
         <div class="contenido">
             <?php
                 require_once("view/common/sidebar/side_index.php");
-                require_once("view/index.php");
+                require_once("view/ayuda.php");
             ?>
         </div>
     </div>

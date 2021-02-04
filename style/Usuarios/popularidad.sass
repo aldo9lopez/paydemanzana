@@ -1,0 +1,95 @@
+@import "../main.sass"
+.area
+    .info-stat
+        width: 100%
+        padding: 10px 20px
+        background: #FFFFFF
+        box-sizing: border-box
+        border-radius: 10px
+        text-align: center
+        margin: 0px auto 10px auto
+        .posiciones
+            display: flex
+            text-align: center
+            margin: 20px auto
+            width: fit-content
+            .carrera
+                margin: 0px 20px
+                padding: 20px
+                width: 150px
+                height: 150px
+                border: 2px solid $verde-2
+                border-radius: 50%
+                h4
+                    font-size: 20px
+                    margin: 5px 0px
+                .stat
+                    font-size: 18px
+                    font-family: $font-2
+                    color: $verde-2
+                    margin: 10px auto
+                    display: block
+                .posicion
+                    .pos
+                        display: block
+                        margin: 10px auto
+                    .numero
+                        font-size: 50px
+                        color: $verde-2
+            .general
+                margin: 0px 20px
+                padding: 20px
+                width: 150px
+                height: 150px
+                border: 2px solid $rojo-1
+                border-radius: 50%
+                h4
+                    font-size: 20px
+                    margin: 5px 0px
+                .stat
+                    font-size: 18px
+                    font-family: $font-2
+                    color: $rojo-1
+                    margin: 10px auto
+                    display: block
+                .posicion
+                    .pos
+                        display: block
+                        margin: 10px auto
+                    .numero
+                        font-size: 50px
+                        color: $rojo-1
+            div[name="circulo-1"]
+                border: 2px solid $verde-2
+                .stat
+                    color: $verde-2
+                .posicion
+                    .numero
+                        color: $verde-2
+            div[name="circulo-2"]
+                border: 2px solid $azul-2
+                .stat
+                    color: $azul-2
+                .posicion
+                    .numero
+                        color: $azul-2
+            div[name="circulo-3"]
+                border: 2px solid $rojo-1
+                .stat
+                    color: $rojo-1
+                .posicion
+                    .numero
+                        color: $rojo-1
+                    
+
+        table
+            margin: 40px auto
+            td
+                padding: 10px
+@media screen and ( max-width: 1000px )
+    .area
+        .info-stat
+            .posiciones
+                display: block
+                .carrera
+                    margin: 20px auto

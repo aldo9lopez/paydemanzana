@@ -41,7 +41,7 @@
                     ?>
                     <div class="usuario">
                         <img width="50px" src="../uploads/profile-images/<?php echo $resultado_imagen;?>" alt="<?php echo $result->Nombre . " " . $result->Apellido;?>">
-                        <a href="#?id=<?php echo $result->No_control;?>"><?php echo $result->Nombre . " " . $result->Apellido;?></a>
+                        <a href="../Usuarios/?id=<?php echo $result->No_control;?>"><?php echo $result->Nombre . " " . $result->Apellido;?></a>
                         <span class="result-carrera"><?php echo $resultado_carrera;?></span>
                     </div>
                     <?php

@@ -1,0 +1,161 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.area .config {
+  width: 100%;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.area .config div {
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid #346ca0;
+  text-align: left;
+}
+
+.area .config div > label {
+  display: block;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background: #ebf4f7;
+  border-radius: 5px;
+}
+
+.area .config div > label span {
+  float: right;
+  color: #7e7e7e;
+}
+
+.area .config div > label:hover {
+  cursor: pointer;
+}
+
+.area .config div input[type="checkbox"] {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.area .config div form {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.area .config div form input[type="text"], .area .config div form input[type="tel"], .area .config div form input[type="email"], .area .config div form input[type="password"], .area .config div form input[type="number"] {
+  background: #FFF;
+  width: 90%;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #346ca0;
+  font-size: 15px;
+  padding: 10px 7px;
+  display: block;
+  margin: 0px 0px 10px 0px;
+}
+
+.area .config div form input[type="text"]:hover, .area .config div form input[type="tel"]:hover, .area .config div form input[type="email"]:hover, .area .config div form input[type="password"]:hover, .area .config div form input[type="number"]:hover, .area .config div form textarea:hover {
+  border-color: #8ac6ff;
+}
+
+.area .config div form input[type="text"]:focus, .area .config div form input[type="tel"]:focus, .area .config div form input[type="email"]:focus, .area .config div form input[type="password"]:focus, .area .config div form input[type="number"]:focus, .area .config div form textarea:focus {
+  border: 1px solid #8ac6ff;
+  -webkit-box-shadow: 0px 0px 8px #8ac6ff;
+          box-shadow: 0px 0px 8px #8ac6ff;
+  outline: none;
+}
+
+.area .config div form select {
+  display: block;
+  width: 90%;
+  line-height: 1.3;
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #346ca0;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.area .config div form select option {
+  font-weight: normal;
+  padding: 5px;
+}
+
+.area .config div form select:hover {
+  border-color: #8ac6ff;
+}
+
+.area .config div form select:focus {
+  border: 1px solid #8ac6ff;
+  -webkit-box-shadow: 0px 0px 8px #8ac6ff;
+          box-shadow: 0px 0px 8px #8ac6ff;
+  outline: none;
+}
+
+.area .config div form input[type="submit"] {
+  margin: 10px auto 4px auto;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  background: #346ca0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 25px;
+}
+
+.area .config div form input[type="submit"]:hover {
+  background: #8ac6ff;
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+.area .config div form input[type="submit"]:focus {
+  -webkit-box-shadow: 0px 0px 8px #8ac6ff;
+          box-shadow: 0px 0px 8px #8ac6ff;
+}
+/*# sourceMappingURL=configuracion.css.map */
