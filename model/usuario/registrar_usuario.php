@@ -77,11 +77,11 @@ if(isset($_POST["registrarse"])){
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'C&oacutedigo de activaci&oacuten para Pay de Manzana';
+            $mail->Subject = 'Codigo de activacion para Pay de Manzana';
             $mail->Body    = "Su código de verificación es: <b>$clave</b> <br>¡Gracias por usar Pay de Manzana!";
 
             $mail->send();
-
+            
             header("location: login?success=13");
             }catch(Exception $e){
                 $mensaje = $e->getMessage();
