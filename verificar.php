@@ -46,6 +46,7 @@ require_once("model/usuario/validar_clave.php");
         <div class="reenviar-correo">
             <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php")); ?>" method="post">
                 <p>¿No recibiste el correo? Busca en tu bandeja de spam o haz click en el siguiente botón para reenviar el correo</p>
+                <input type="hidden" name="usuario" id="usuario" value="<?php echo $usuario; ?>">
                 <input type="submit" name="enviar-correo" value="Reenviar correo">
             </form>
         </div>

@@ -20,6 +20,7 @@ if(isset($_POST["enviar"])){
     $resultado->bindValue(":user", $usuario);
     $resultado->execute();
     $registro = $resultado->fetch(PDO::FETCH_ASSOC);
+    
     if($clave==html_entity_decode($registro["Clave"], ENT_QUOTES,"UTF-8")){
         try{
             $query="DELETE FROM usuario_verificar WHERE Usuario=:user";
@@ -45,10 +46,10 @@ if(isset($_POST["enviar"])){
 
 
 if(isset($_POST["enviar-correo"])){
-    
+    require("controller/conexion.php");
 
-
-    $query = "SELECT Correo FROM usuario where No_control=:user";
+    $query = "SELECT Correo FROM usuario WHERE No_control=:user";
+    $usuario = $_POST["usuario"];
     $resultado = $base->prepare($query);
     $resultado->bindValue(":user", $usuario);
     $resultado->execute();
@@ -56,12 +57,13 @@ if(isset($_POST["enviar-correo"])){
 
     $correo = $registro["Correo"];
 
+
     try{
         $query="UPDATE usuario_verificar SET Clave=:clave WHERE Usuario=:usuario";
         $resultado=$base->prepare($query);
         $permitted_chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $clave = generarCodigo($permitted_chars, 6);
-        $resultado->bindValue(":user",$user);
+        $resultado->bindValue(":usuario",$usuario);
         $resultado->bindValue(":clave",$clave);
             
         $resultado->execute();
@@ -79,11 +81,11 @@ if(isset($_POST["enviar-correo"])){
 
             //Recipients
         $mail->setFrom('soporte@paydmanzana.com', 'Equipo Pay de Manzana');
-        $mail->addAddress($correo, $nombre);
+        $mail->addAddress($correo,'Usuario');
 
             // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'C&oacutedigo de activaci&oacuten para Pay de Manzana';
+        $mail->Subject = 'Codigo de activacion para Pay de Manzana';
         $mail->Body    = "Su código de verificación es: <b>$clave</b> <br>¡Gracias por usar Pay de Manzana!";
 
         $mail->send();

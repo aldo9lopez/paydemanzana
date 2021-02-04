@@ -23,10 +23,6 @@ if (isset($_POST["enviar"])) {
                     $_SESSION["preusuario"] = $_POST["usuario"];
                     echo '<script> window.location.replace("verificar")</script>';
                 } else {
-                    $resultado = $base->prepare($query);
-                    $resultado->bindValue(":user", $user);
-                    $resultado->execute();
-                    $registro = $resultado->fetch(PDO::FETCH_ASSOC);
                     if (isset($_POST["recordar"])) {
                         $user_hash = $user . "inspira_pay_alsios";
                         setcookie("usuario", $_POST["usuario"], time() + 86400, '/');
@@ -34,6 +30,7 @@ if (isset($_POST["enviar"])) {
                     }
                     session_start();
                     $_SESSION["usuario"] = $_POST["usuario"];
+                    
                     echo '<script> window.location.replace("index")</script>';
                 }
             } else {
