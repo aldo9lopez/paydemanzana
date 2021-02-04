@@ -17,9 +17,9 @@ if (session_status() != 2) {
     session_start();
 }
 if (isset($_SESSION["usuario"])) {
-    header("location:index");
+    header("Location:index");
 }else if(!isset($_SESSION["preusuario"] )){
-    header("location:login");
+    header("Location:login");
 }else{
     $usuario = $_SESSION["preusuario"];
 }

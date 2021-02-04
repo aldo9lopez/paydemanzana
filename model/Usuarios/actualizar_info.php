@@ -29,7 +29,7 @@
                         //Carpeta temporal a carpeta de destino
                         move_uploaded_file($_FILES["inpFile"]['tmp_name'],$destino . $nombre_file);
                 }else{
-                    header("location:index.php?error=201");
+                    header("Location:index.php?error=201");
                     return;
                 }
             }
@@ -40,7 +40,7 @@
             $resultado->bindValue(":descripcion",$descripcion);
             $resultado->bindValue(":ruta",$ruta);
             $resultado->execute();
-            header("location:miperfil");
+            header("Location:miperfil");
 
         }catch(Exception $e){
             $mensaje = $e->getMessage();

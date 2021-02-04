@@ -1,11 +1,11 @@
 <?php
     if(!isset($_GET["id"])){
-        header("location:../");
+        header("Location:../");
     }
     $perfil_usuario = $_GET["id"];
 
     if($perfil_usuario==$usuario){
-        header("location:miperfil");
+        header("Location:miperfil");
     }
 
     $sql ="SELECT Nombre, Apellido, Carrera, Anio_ingreso FROM usuario WHERE No_control=:usuario";

@@ -1,6 +1,6 @@
 <?php
     if(!isset($_GET["id"])){
-        header("location:../");
+        header("Location:../");
     }
     $subject = $_GET["id"];
 
@@ -15,7 +15,7 @@
     $subjectcareer = $registro["Carrera"];
 
     if($subjectcareer!=$carrera){
-        header("location:../");
+        header("Location:../");
     }
 
     $sql ="SELECT ((Aprobadas * 100) / Totales) as Porcentaje FROM (SELECT COUNT(Case WHEN A.Estatus = 'Aprobada' THEN 1 END) as Aprobadas, COUNT(*) as Totales FROM calificacion A WHERE A.Materia = :materia) t";

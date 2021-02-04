@@ -20,7 +20,7 @@ if (isset($_POST["enviar"])) {
                 if ($numero > 0) {
                     session_start();
                     $_SESSION["preusuario"] = $_POST["usuario"];
-                    header("location:verificar");
+                    header("Location:verificar");
                 } else {
                     $resultado = $base->prepare($query);
                     $resultado->bindValue(":user", $user);
@@ -33,7 +33,7 @@ if (isset($_POST["enviar"])) {
                     }
                     session_start();
                     $_SESSION["usuario"] = $_POST["usuario"];
-                    header("location:index");
+                    header("Location:index");
                 }
             } else {
                 echo '<script type="text/javascript">';

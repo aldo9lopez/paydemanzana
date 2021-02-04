@@ -1,9 +1,9 @@
 <?php
     if(!isset($_GET["buscar"])){
-        header("location:../");
+        header("Location:../");
     }
     if(!isset($_GET["buscar-tipo"])){
-        header("location:../");
+        header("Location:../");
     }
     $search = $_GET["buscar"];
     $searchtype = $_GET["buscar-tipo"];

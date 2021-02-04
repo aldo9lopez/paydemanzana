@@ -30,7 +30,7 @@
 
             $resultado->execute();
                 
-            header("location:calificar?materia=$reg_materia");
+            header("Location:calificar?materia=$reg_materia");
 
         }catch(Exception $e){
             $mensaje = $e->getMessage();

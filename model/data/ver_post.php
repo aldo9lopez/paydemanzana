@@ -1,6 +1,6 @@
 <?php
     if(!isset($_GET["id"])){
-        header("location:../");
+        header("Location:../");
     }
     $post = $_GET["id"];
 

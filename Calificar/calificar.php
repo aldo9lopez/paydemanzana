@@ -5,12 +5,12 @@ if (session_status() != 2) {
     session_start();
 }
 if (!isset($_SESSION["usuario"])) {
-    header("location:../login");
+    header("Location:../login");
 } else {
     $usuario = $_SESSION["usuario"];
 }
 if (!isset($_GET["materia"])) {
-    header("location:../login");
+    header("Location:../login");
 }
 $materia = $_GET["materia"];
 require("../model/usuario/ver_perfil.php");
@@ -19,7 +19,7 @@ require_once("../model/Calificar/registrar_calificacion.php");
 require_once("../model/Calificar/editar_calificacion.php");
 
 if ($subjectcareer != $carrera) {
-    header("location:../login");
+    header("Location:../login");
 }
 
 $titulo = "Calificar - $subjectname | Pay de Manzana";

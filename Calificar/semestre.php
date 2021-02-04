@@ -5,12 +5,12 @@
         session_start();
     }
     if(!isset($_SESSION["usuario"])){
-        header("location:../login");
+        header("Location:../login");
     }else{
         $usuario = $_SESSION["usuario"];
     }
     if(!isset($_GET["id"])){
-        header("location:../login");
+        header("Location:../login");
     }
     $semestre = $_GET["id"];
     require("../model/usuario/ver_perfil.php");

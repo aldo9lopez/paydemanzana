@@ -31,7 +31,7 @@
                         //Carpeta temporal a carpeta de destino
                         move_uploaded_file($_FILES["imagen"]['tmp_name'],$destino . $nombre_file);
                 }else{
-                    header("location:index.php?error=201");
+                    header("Location:index.php?error=201");
                     return;
                 }
             }

@@ -4,5 +4,5 @@
     setcookie("usuario","none",time()-1,'/');
     setcookie("password","none",time()-1, '/');
     setcookie("tipo","none",time()-1, '/');
-    header("location:login");
+    header("Location:login");
 ?>

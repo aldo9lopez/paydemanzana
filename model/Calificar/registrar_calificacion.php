@@ -39,7 +39,7 @@
                 
                 $resultado->execute();
                 
-                header("location:semestre?id=$subjectsem");
+                header("Location:semestre?id=$subjectsem");
 
             }
 

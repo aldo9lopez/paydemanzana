@@ -1,6 +1,6 @@
 <?php
     if(!isset($_GET["id"])){
-        header("location:../");
+        header("Location:../");
     }
     require("../model/data/get_profesor.php");
 
