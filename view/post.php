@@ -72,7 +72,7 @@
                 echo "<img class=\"foto-perfil\" src=\"uploads/profile-images/$comentario->Foto\" alt=\"profile-img-post\" width=\"50px\">";
                 echo '<div class="info-area">';
                 echo '<div class="info-head">';
-                echo "<a href=\"#?id=$comentario->Usuario\">$comentario->Nombre</a>";
+                echo "<a href=\"Usuarios/?id=$comentario->Usuario\">$comentario->Nombre</a>";
                 date_default_timezone_set("America/Mexico_City");
                 $fecha = obtenerFecha($comentario->Fecha . $comentario->Hora,date('G:i:s') . date("y-n-j"));
                 echo "<span class=\"info-hora\">$fecha</span>";

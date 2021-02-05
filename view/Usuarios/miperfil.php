@@ -9,7 +9,9 @@
                 <a href="editarperfil">Editar perfil</a>
             </div>
             <div class="head-info">
-                <img src="../uploads/profile-images/<?php echo $profileimage; ?>" alt="img-perfil" class="foto-perfil" width="150px">
+                <div class="imagen">
+                    <img src="../uploads/profile-images/<?php echo $profileimage; ?>" alt="img-perfil" class="foto-perfil" width="150px">
+                </div>
                 <div class="nombre">
                     <h2><?php echo $profilename; ?></h2>
                     <hr>

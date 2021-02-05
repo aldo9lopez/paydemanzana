@@ -2,7 +2,9 @@
     <div class="area">
         <div class="principal-perfil">
             <div class="head-info">
-                <img src="../uploads/profile-images/<?php echo $perfil_imagen; ?>" alt="img-perfil" class="foto-perfil" width="150px">
+                <div class="imagen">
+                    <img src="../uploads/profile-images/<?php echo $perfil_imagen; ?>" alt="img-perfil" class="foto-perfil" width="150px">
+                </div>
                 <div class="nombre">
                     <h2><?php echo $perfil_nombre; ?></h2>
                     <hr>

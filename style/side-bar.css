@@ -107,13 +107,20 @@ body .main {
   display: flex;
 }
 
-.main .contenido .sidebar .perfil .nombre img {
+.main .contenido .sidebar .perfil .nombre .img-container {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  background: #FFFFFFFF;
   border: 3px solid #ffffff;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.main .contenido .sidebar .perfil .nombre .img-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   float: left;
 }
 
