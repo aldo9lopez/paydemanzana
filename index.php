@@ -19,6 +19,7 @@
     require_once("view/common/head/head_index.php");
 ?>
     <link href="style/index.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
 <body>
