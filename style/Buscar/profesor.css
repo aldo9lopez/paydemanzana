@@ -237,7 +237,16 @@ body .main {
 
 @media screen and (max-width: 1000px) {
   .frame .califica {
-    display: none;
+    width: 100%;
+    font-family: Proxima Nova Bold;
+    border-bottom: 1px solid #7e7e7e;
+  }
+  .frame .califica a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    margin: 10px auto;
   }
   .frame .responsive {
     margin: 20px auto;

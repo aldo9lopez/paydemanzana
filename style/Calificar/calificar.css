@@ -138,4 +138,18 @@ form .leyenda-calis {
 form input[name="editar"] {
   margin: 20px auto 0px auto;
 }
+
+form .info-noesta {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+form .info-noesta a {
+  color: #346ca0;
+  text-decoration: none;
+}
+
+form .info-noesta a:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=calificar.css.map */

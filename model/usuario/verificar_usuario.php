@@ -25,11 +25,11 @@ if (isset($_POST["enviar"])) {
                 } else {
                     if (isset($_POST["recordar"])) {
                         $user_hash = $user . "inspira_pay_alsios";
-                        setcookie("usuario", $_POST["usuario"], time() + 86400, '/');
-                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + 86400, '/');
+                        setcookie("usuario", $_POST["usuario"], time() + 864000000, '/');
+                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + 864000000, '/');
                     }
                     session_start();
-                    $_SESSION["usuario"] = $_POST["usuario"];
+                    $_SESSION["usuario"] = $user;
                     
                     echo '<script> window.location.replace("index")</script>';
                 }

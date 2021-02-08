@@ -8,5 +8,6 @@
             require("../model/Calificar/ver_materias.php");
         ?>
         <p>*Califica la materia una vez que la hayas pasado</p>
+        <a href="../Calificar/" class="atras"><i class="material-icons">keyboard_arrow_left</i> Todos los semestres</a>
     </div>
 </div>

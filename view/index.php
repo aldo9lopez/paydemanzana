@@ -1,5 +1,6 @@
 <div class="espacio">
     <section class="posts">
+        <div class="movil-calif"><a href="Calificar/">¡<img src="images/ico-man-buena.PNG" alt="manzana" width="25px"> Califica a tus profesores!</a></div>
         <div class="publicar">
             <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php"));?>" method="post" class="upload-form" enctype="multipart/form-data">
                 <div class="principal">

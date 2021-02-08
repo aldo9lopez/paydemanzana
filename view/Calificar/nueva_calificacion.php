@@ -26,6 +26,7 @@
             }
         ?>
     </select>
+    <p class="info-noesta">Si tu profesor no aparece en la lista envia un correo a <a href="mailto:ayuda@paydmanzana.com">ayuda@paydmanzana.com</a></p>
     <label class="title">Calificación</label>
     <p class="clasificacion">
           <input id="radio1-<?php echo $i+1;?>" type="radio" name="estrellas-<?php echo $i+1;?>" value="5"><!--

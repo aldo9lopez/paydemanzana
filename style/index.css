@@ -41,6 +41,32 @@ body .main {
   margin: 0px 10px 0px 0px;
 }
 
+.espacio .posts .movil-calif {
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  display: none;
+}
+
+.espacio .posts .movil-calif a {
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  text-decoration: none;
+  color: #db4545;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 0px solid #db4545;
+  background: #FFFFFF;
+}
+
+.espacio .posts .movil-calif a img {
+  vertical-align: middle;
+}
+
+.espacio .posts .movil-calif a:hover {
+  background: #f8b1b1;
+}
+
 .espacio .posts .publicar {
   width: 100%;
   margin: 0px auto 15px auto;
@@ -348,6 +374,9 @@ body .main {
   }
   .espacio .posts {
     width: 100%;
+  }
+  .espacio .posts .movil-calif {
+    display: block;
   }
   .espacio .posts .publicar .principal textarea {
     width: 80%;

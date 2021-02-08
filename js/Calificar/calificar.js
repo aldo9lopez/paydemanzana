@@ -1,8 +1,7 @@
 
 $(document).ready( function () {
-    $('.form-control-chosen-required').chosen({
-        allow_single_deselect: false,
-        width: '100%'
+    $('.form-control-chosen-required').select2({
+        
     });
     cambiarveces();
 });
