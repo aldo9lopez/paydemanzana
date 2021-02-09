@@ -42,7 +42,7 @@
                     <input type="submit" name="enviar" value="Iniciar Sesión">
                 </div>
                 <div class="check">
-                    <input type="checkbox" name="recordar" id="recordar">
+                    <input type="checkbox" name="recordar" id="recordar" checked>
                     <label for="recordar">Recordar</label>
                     <a href="#" class="forgot-pass">Olvidé mi contraseña</a>
                 </div>
