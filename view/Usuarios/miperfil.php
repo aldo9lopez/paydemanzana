@@ -94,7 +94,7 @@
                 </div>
                 <div class="separador">
                     <span class="imagen"><input type="file" name="imagen" id="imagen" accept="image/*" class="upload-file" data-max-size="5000000"></span>
-                    <label for="imagen"><i class="material-icons" style="font-size: 18px; vertical-align: middle;">image</i> <span>Sube una imagen</span></label>
+                    <label for="imagen"><i class="material-icons" style="font-size: 18px; vertical-align: middle;">image</i> <span>Imagen</span></label>
                     <input type="submit" name="publicar" value="Publicar">
                 </div>
             </form>

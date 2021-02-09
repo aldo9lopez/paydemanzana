@@ -25,8 +25,9 @@ if (isset($_POST["enviar"])) {
                 } else {
                     if (isset($_POST["recordar"])) {
                         $user_hash = $user . "inspira_pay_alsios";
-                        setcookie("usuario", $_POST["usuario"], time() + 864000000, '/');
-                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + 864000000, '/');
+                        $tiempo = 60 * 60 * 24 * 30;
+                        setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/');
+                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/');
                     }
                     session_start();
                     $_SESSION["usuario"] = $user;
@@ -52,6 +53,12 @@ if(isset($_GET["success"])){
     if($_GET["success"]==13){
         echo '<script type="text/javascript">';
         echo "userSuccess();";
+        echo "</script>";
+    }
+
+    if($_GET["success"]==24){
+        echo '<script type="text/javascript">';
+        echo "userSuccess24();";
         echo "</script>";
     }
 }

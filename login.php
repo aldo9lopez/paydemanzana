@@ -44,7 +44,7 @@
                 <div class="check">
                     <input type="checkbox" name="recordar" id="recordar" checked>
                     <label for="recordar">Recordar</label>
-                    <a href="#" class="forgot-pass">Olvidé mi contraseña</a>
+                    <a href="password_reset" class="forgot-pass">Olvidé mi contraseña</a>
                 </div>
             </form>
         </div>

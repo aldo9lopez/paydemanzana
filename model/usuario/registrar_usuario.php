@@ -64,7 +64,7 @@ if(isset($_POST["registrarse"])){
 
             $mail->SMTPDebug = 0;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'mail.paydmanzana.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'paydmanzana.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'soporte@paydmanzana.com';                     // SMTP username
             $mail->Password   = 'SDidko!mai_2ss';                               // SMTP password

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Registrarse | Pay de Manzana</title>
+    <title>Reestablecer contraseña | Pay de Manzana</title>
     <link rel="shortcut icon" href="images/ico-copia.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/signup.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,7 +22,7 @@
 ?>
 
 <?php
-    require_once("model/usuario/registrar_usuario.php");
+    require_once("model/usuario/reestablecer.php");
 ?>
 
 <body>
@@ -31,42 +31,18 @@
         <img src="images/logo-blanco.png" alt="pay-d-man-logo" width="200px">
 
         <div class="signup">
-            <h2>Registro:</h2>
-            <p class="info-tec"><strong>¿Eres del Instituto Tecnológico de León?</strong><br> Escribe tus datos</p>
+            <h2>Reestablecer contraseña</h2>
             <form action="<?php echo(basename($_SERVER['PHP_SELF'],".php")); ?>" method="post" onsubmit="return validar()">
                 <table class="registro">
                     <tr>
                         <td colspan="1">
+                            <label for="carrera">Numero de control:</label>
                             <input placeholder="Número de Control" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="control" id="control" onchange="numeroDeControl()" maxlength="8">
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <div class="correo">
-                            <input type="text" placeholder="Correo institucional" name="email" id="email" maxlength="8">
-                            <label for="email" class="correo">@leon.tecnm.mx</label>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
                         <td colspan="1">
-                            <input type="text" placeholder="Nombre(s)" name="nombre" id="nombre" maxlength="60">
-                        </td>
-                        <td>
-                            <input type="text" placeholder="Apellido" name="apellido" id="apellido" maxlength="80">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="sexo">Sexo:</label>
-                            <select name="sexo" id="sexo">
-                                <option value="1" id="hombre">Hombre</option>
-                                <option value="2" id="mujer">Mujer</option>
-                                <option value="3">No especificado</option>
-                            </select>
-                        </td>
-                        <td colspan="1">
-                            <label for="carrera">Carrera: *</label>
+                            <label for="carrera">Carrera:</label>
                             <select name="carrera" id="carrera">
                                 <option value="1" id="sistemas">Sistemas</option>
                                 <option value="2" id="tics">TICs</option>
@@ -100,35 +76,24 @@
                         </td>
                     </tr>
                     
-                    <tr>
-                        <td>
-                            <label for="pass">Contraseña:</label>
-                            <input type="password" name="pass" id="pass">
-                        </td>
-                        <td>
-                            <label for="pass2">Repite la contraseña:</label>
-                            <input type="password" name="pass2" id="pass2">
-                        </td>
-                    </tr>
                 </table>
-                <p class="info-correo">*Te enviaremos un código de activación a tu correo institucional</p>
-                <input type="submit" value="Registrarse" name="registrarse" id="registrarse">
-
+                <p class="info-correo">*Te enviaremos una contraseña provisional a tu correo institucional</p>
+                <input type="submit" value="Reestablecer" name="enviar" id="enviar">
             </form>
-            <br>
-            <hr class="linea">
-            <div class="header">
-            <img src="images/escuelas/itleon.png" alt="pay-d-man-logo" width="80px">
             </div>
 
         </div>
         
-        <div class="acceder">
-            <p>¿Ya tienes cuenta? <a href="login">Inicia sesión</a></p>
-        </div>
 
     </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="js/signup.js"></script>
+    <script src="js/password_reset.js"></script>
+    <?php
+        if($alerta){
+            echo '<script type="text/javascript">alerta();</script>';
+
+        }
+    
+    ?>
     
 </body>

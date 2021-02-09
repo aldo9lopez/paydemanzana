@@ -863,8 +863,13 @@ class PHPMailer
         }
         //Calling mail() with null params breaks
         if (!$this->UseSendmailOptions || null === $params) {
+            $this->edebug("Sending with mail()\nTo: {$to}\nSubject: {$subject}\nHeaders: {$header}");
             $result = @mail($to, $subject, $body, $header);
         } else {
+            $this->edebug(
+                "Sending with mail()\nTo: {$to}\nSubject: {$subject}\n" .
+                "Headers: {$header}\nAdditional params: {$params}"
+            );
             $result = @mail($to, $subject, $body, $header, $params);
         }
 
@@ -1661,6 +1666,7 @@ class PHPMailer
         }
 
         $sendmail = sprintf($sendmailFmt, escapeshellcmd($this->Sendmail), $this->Sender);
+        $this->edebug("Sending with sendmail\nCommand: {$sendmail}\nHeaders: {$header}");
 
         if ($this->SingleTo) {
             foreach ($this->SingleToArray as $toAddr) {
@@ -1810,10 +1816,17 @@ class PHPMailer
         //Qmail docs: http://www.qmail.org/man/man8/qmail-inject.html
         //Example problem: https://www.drupal.org/node/1057954
         // CVE-2016-10033, CVE-2016-10045: Don't pass -f if characters will be escaped.
-        if (!empty($this->Sender) && static::validateAddress($this->Sender) && self::isShellSafe($this->Sender)) {
-            $params = sprintf('-f%s', $this->Sender);
+        if ('' === $this->Sender) {
+            $this->Sender = $this->From;
+        }
+        if (empty($this->Sender) && !empty(ini_get('sendmail_from'))) {
+            //PHP config has a sender address we can use
+            $this->Sender = ini_get('sendmail_from');
         }
         if (!empty($this->Sender) && static::validateAddress($this->Sender)) {
+            if (self::isShellSafe($this->Sender)) {
+                $params = sprintf('-f%s', $this->Sender);
+            }
             $old_from = ini_get('sendmail_from');
             ini_set('sendmail_from', $this->Sender);
         }
