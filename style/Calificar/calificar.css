@@ -152,4 +152,10 @@ form .info-noesta a {
 form .info-noesta a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1000px) {
+  .nueva-calif .manzana-B {
+    margin: 20px auto;
+  }
+}
 /*# sourceMappingURL=calificar.css.map */

@@ -41,9 +41,10 @@ body .main {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border: 5px solid #db4545;
+  margin: 10px auto 10px auto;
 }
 
 .area .principal-perfil .head-info h2 {
