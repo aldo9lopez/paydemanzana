@@ -31,6 +31,12 @@ if (isset($_POST["enviar"])) {
                         setcookie('settings',serialize($defaultSettings),time()+3600*24*30,'/' , '.paydmanzana.com' );
                         setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/' , '.paydmanzana.com');
                         setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/' , '.paydmanzana.com' );
+
+                        
+                        echo '<script type="text/javascript">';
+                        echo 'document.cookie = "usuario=' . $_POST["usuario"] .  '; max-age=' . $tiempo . '; path=/";';
+                        echo 'document.cookie = "password=' . password_hash($user_hash, PASSWORD_DEFAULT) .  '; max-age=' . $tiempo . '; path=/";';
+                        echo "</script>";
                     }
                     
                     echo '<script> window.location.replace("index")</script>';
