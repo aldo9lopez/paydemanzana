@@ -1,6 +1,5 @@
 
 <?php
-    require_once("model/usuario/verificar_usuario.php");
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +24,7 @@
     if(isset($_SESSION["usuario"])){
         echo '<script> window.location.replace("index")</script>';
     }
+    require_once("model/usuario/verificar_usuario.php");
 ?>
 <body>
     <div class="main">
