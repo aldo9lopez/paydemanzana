@@ -1,3 +1,8 @@
+
+<?php
+    require_once("model/usuario/verificar_usuario.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,9 +23,8 @@
         session_start();
     }
     if(isset($_SESSION["usuario"])){
-        header("Location:index");
+        echo '<script> window.location.replace("index")</script>';
     }
-    require_once("model/usuario/verificar_usuario.php");
 ?>
 <body>
     <div class="main">

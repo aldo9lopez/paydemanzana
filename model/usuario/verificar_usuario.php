@@ -23,14 +23,21 @@ if (isset($_POST["enviar"])) {
                     $_SESSION["preusuario"] = $_POST["usuario"];
                     echo '<script> window.location.replace("verificar")</script>';
                 } else {
+                    session_start();
+                    $_SESSION["usuario"] = $user;
                     if (isset($_POST["recordar"])) {
                         $user_hash = $user . "inspira_pay_alsios";
                         $tiempo = 60 * 60 * 24 * 30;
-                        setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/');
-                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/');
+                        setcookie('settings',serialize($defaultSettings),time()+3600*24*30,'/',);
+                        setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/',);
+                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/',);
+
+                        
+                        echo '<script type="text/javascript">';
+                        echo 'document.cookie = "usuario='.$_POST["usuario"].'; max-age= '. time() + $tiempo .'; path=/";';
+                        echo 'document.cookie = "usuario='.password_hash($user_hash, PASSWORD_DEFAULT).'; max-age= '. time() + $tiempo .'; path=/";';
+                        echo "</script>";
                     }
-                    session_start();
-                    $_SESSION["usuario"] = $user;
                     
                     echo '<script> window.location.replace("index")</script>';
                 }
