@@ -28,15 +28,9 @@ if (isset($_POST["enviar"])) {
                     if (isset($_POST["recordar"])) {
                         $user_hash = $user . "inspira_pay_alsios";
                         $tiempo = 60 * 60 * 24 * 30;
-                        setcookie('settings',serialize($defaultSettings),time()+3600*24*30,'/',);
-                        setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/',);
-                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/',);
-
-                        
-                        echo '<script type="text/javascript">';
-                        echo 'document.cookie = "usuario='.$_POST["usuario"].'; max-age= '. time() + $tiempo .'; path=/";';
-                        echo 'document.cookie = "usuario='.password_hash($user_hash, PASSWORD_DEFAULT).'; max-age= '. time() + $tiempo .'; path=/";';
-                        echo "</script>";
+                        setcookie('settings',serialize($defaultSettings),time()+3600*24*30,'/','.paydemanzana.com');
+                        setcookie("usuario", $_POST["usuario"], time() + $tiempo, '/','.paydemanzana.com');
+                        setcookie("password", password_hash($user_hash, PASSWORD_DEFAULT), time() + $tiempo, '/','.paydemanzana.com');
                     }
                     
                     echo '<script> window.location.replace("index")</script>';
