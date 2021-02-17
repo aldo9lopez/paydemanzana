@@ -3,6 +3,7 @@
         try{
             $descripcion = $_POST["descripcion"];
             $ruta="user-none.JPG";
+            $mov=false;
 
             if(isset($_FILES["inpFile"]) && $_FILES["inpFile"]['name']!=""){
                 $path = $_FILES['inpFile']['name'];
@@ -28,18 +29,30 @@
                         $destino= $ruta_servidor . 'profile-images/';
                         //Carpeta temporal a carpeta de destino
                         move_uploaded_file($_FILES["inpFile"]['tmp_name'],$destino . $nombre_file);
+
+                        $mov=true;
                 }else{
                     echo '<script> window.location.replace("index.php?error=201")</script>';
                     return;
                 }
             }
-            $query="UPDATE usuario_presentacion SET Imagen_ruta=:ruta, Descripcion=:descripcion WHERE Usuario=:usuario";
-            $resultado=$base->prepare($query);
+            if($mov){
+                $query="UPDATE usuario_presentacion SET Imagen_ruta=:ruta, Descripcion=:descripcion WHERE Usuario=:usuario";
+                $resultado=$base->prepare($query);
 
-            $resultado->bindValue(":usuario",$usuario);
-            $resultado->bindValue(":descripcion",$descripcion);
-            $resultado->bindValue(":ruta",$ruta);
-            $resultado->execute();
+                $resultado->bindValue(":usuario",$usuario);
+                $resultado->bindValue(":descripcion",$descripcion);
+                $resultado->bindValue(":ruta",$ruta);
+                $resultado->execute();
+            }else{
+                $query="UPDATE usuario_presentacion SET Descripcion=:descripcion WHERE Usuario=:usuario";
+                $resultado=$base->prepare($query);
+
+                $resultado->bindValue(":usuario",$usuario);
+                $resultado->bindValue(":descripcion",$descripcion);
+                $resultado->execute();
+
+            }
             echo '<script> window.location.replace("miperfil")</script>';
 
         }catch(Exception $e){

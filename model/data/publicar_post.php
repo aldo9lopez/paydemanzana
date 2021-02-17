@@ -2,7 +2,7 @@
     if(isset($_POST["publicar"])){
         try{
             $query="SELECT AUTO_INCREMENT AS Siguiente FROM information_schema.tables
-            WHERE table_name = 'post' and table_schema = 'pay_de_manzana';";
+            WHERE table_name = 'post' and table_schema = 'paydmanz_ana';";
             $resultado=$base->prepare($query);
             $resultado->execute();
             $registro=$resultado->fetch((PDO::FETCH_ASSOC));
