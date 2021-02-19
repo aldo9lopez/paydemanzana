@@ -112,7 +112,11 @@
                     </tr>
                 </table>
                 <p class="info-correo">*Te enviaremos un código de activación a tu correo institucional</p>
-                <input type="submit" value="Registrarse" name="registrarse" id="registrarse">
+                
+                <input type="checkbox" name="privacidad" id="privacidad" onchange="checkPrivacidad();"><label for="privacidad"> He leído y estoy de acuerdo con el 
+                <a href="aviso_privacidad.pdf" target="_blank" class="linkpriv" style="text-decoration: none; color:#346ca0;">Aviso de privacidad</a></label>
+                <br>
+                <input type="submit" value="Registrarse" name="registrarse" id="registrarse" style="background: #f8b1b1; color:#3a3a3a" disabled>
 
             </form>
             <br>

@@ -89,6 +89,23 @@ function numeroInvalido() {
     });
 }
 
+function checkPrivacidad(){
+    check = document.getElementById('privacidad');
+
+    if(check.checked){
+        boton = document.getElementById('registrarse');
+        boton.style.background = '#db4545';
+        boton.style.color = '#ffffff';
+        boton.disabled = false;
+    }else{
+        boton = document.getElementById('registrarse');
+        boton.style.background = '#f8b1b1';
+        boton.style.color = '#3a3a3a';
+        boton.disabled = true;
+
+    }
+}
+
 if(repetido){
     
     Swal.fire({
@@ -99,3 +116,4 @@ if(repetido){
         confirmButtonColor: '#FF4558'
     });
 }
+
