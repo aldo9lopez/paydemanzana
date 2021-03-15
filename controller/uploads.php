@@ -6,6 +6,7 @@
     $rutaNueva = substr($ruta_file,$len3+1,$len2);
 
 
-    $ruta_servidor = "/home1/paydmanz/public_html/uploads/";
+    //$ruta_servidor = "/home1/paydmanz/public_html/uploads/";
+    $ruta_servidor = $_SERVER['DOCUMENT_ROOT'] . "/$rutaNueva/uploads/";
 
 ?>
