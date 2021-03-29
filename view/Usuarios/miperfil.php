@@ -83,6 +83,9 @@
                     </tr>
                 </table>
             </div>
+            <div class="boton-popu">
+                <a href="popularidad">Ver popularidad</a>
+            </div>
 
         </div>
 

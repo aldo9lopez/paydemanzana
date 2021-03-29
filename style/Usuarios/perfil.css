@@ -119,6 +119,26 @@ body .main {
   color: #7e7e7e;
 }
 
+.area .principal-perfil .boton-popu {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.area .principal-perfil .boton-popu a {
+  padding: 3px 5px;
+  color: #db4545;
+  border-radius: 10px;
+  border: 2px solid #db4545;
+  text-decoration: none;
+}
+
+.area .principal-perfil .boton-popu a:hover {
+  color: #7e7e7e;
+  border-color: #7e7e7e;
+}
+
 .area .publicar {
   width: 100%;
   margin: 0px auto 15px auto;
