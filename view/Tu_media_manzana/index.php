@@ -76,19 +76,19 @@ Ig:</textarea>
                 <div class="test-corazon">
                     <img src="../images/media-manzana-test-corazon.PNG" alt="corazon" width="100px">
                     <span class="titulo-test"><b>Test del corazón</b></span>
-                    <a href="#">Tomar test</a>
+                    <a href="cuestionario?tipo=1">Tomar test</a>
                 </div>
 
                 <div class="test-mente">
                     <img src="../images/media-manzana-test-mente.png" alt="mente" width="100px">
                     <span class="titulo-test"><b>Test de la mente</b></span>
-                    <a href="#">Tomar test</a>
+                    <a href="cuestionario?tipo=2">Tomar test</a>
                 </div>
 
                 <div class="test-personal">
                     <img src="../images/media-manzana-test-personal.PNG" alt="personal" width="100px">
                     <span class="titulo-test"><b>Test personal</b></span>
-                    <a href="#">Tomar test</a>
+                    <a href="cuestionario?tipo=3">Tomar test</a>
                 </div>
             </div>
             <hr>
