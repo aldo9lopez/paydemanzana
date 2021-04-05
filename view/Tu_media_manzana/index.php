@@ -1,5 +1,8 @@
 <div class="espacio">
     <div class="area">
+        <?php
+            require_once("../model/Tu_media_manzana/ver_info.php");
+        ?>
         <div class="principal-info">
             <img src="../images/logo-media-m.PNG" alt="inicio-media-m" width="400px">
             <h2>Bienvenido</h2>
@@ -30,18 +33,78 @@
                             
                             <div class="dentro" id="form-2" style="display: none;">
                                 <select name="signo" id="signo">
-                                    <option value="1">Aries</option>
-                                    <option value="2">Tauro</option>
-                                    <option value="3">Géminis</option>
-                                    <option value="4">Cáncer</option>
-                                    <option value="5">Leo</option>
-                                    <option value="6">Virgo</option>
-                                    <option value="7">Libra</option>
-                                    <option value="8">Escorpio</option>
-                                    <option value="9">Sagitario</option>
-                                    <option value="10">Capricornio</option>
-                                    <option value="11">Acuario</option>
-                                    <option value="12">Piscis</option>
+                                    <option value="1" <?php
+                                        if($signo_z=='Aries'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Aries</option>
+                                    <option value="2" <?php
+                                        if($signo_z=='Tauro'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Tauro</option>
+                                    <option value="3" <?php
+                                        if($signo_z=='Géminis'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Géminis</option>
+                                    <option value="4" <?php
+                                        if($signo_z=='Cáncer'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Cáncer</option>
+                                    <option value="5" <?php
+                                        if($signo_z=='Leo'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Leo</option>
+                                    <option value="6" <?php
+                                        if($signo_z=='Virgo'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Virgo</option>
+                                    <option value="7" <?php
+                                        if($signo_z=='Libra'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Libra</option>
+                                    <option value="8" <?php
+                                        if($signo_z=='Escorpio'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Escorpio</option>
+                                    <option value="9" <?php
+                                        if($signo_z=='Sagitario'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Sagitario</option>
+                                    <option value="10" <?php
+                                        if($signo_z=='Capricornio'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Capricornio</option>
+                                    <option value="11" <?php
+                                        if($signo_z=='Acuario'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Acuario</option>
+                                    <option value="12" <?php
+                                        if($signo_z=='Piscis'){
+                                            echo 'selected';
+                                        }
+                                    
+                                    ?> >Piscis</option>
                                 </select>
                             </div>
                         </div>
@@ -49,8 +112,7 @@
                             <label for="check-redes"><b>Tus redes sociales <i class="material-icons"  id="flecha-3">arrow_drop_down</i></b></label>
                             <input type="checkbox" name="check-redes" id="check-redes" onchange="mostrarDivs(3);">
                             <div class="dentro" id="form-3" style="display: none;">
-                                <textarea name="redes" id="redes" cols="20" rows="5">Fb:
-Ig:</textarea>
+                                <textarea name="redes" id="redes" cols="20" rows="5"><?php echo $redes_s;?></textarea>
                             </div>
                         </div>
                         <div class="preferencias">
@@ -59,9 +121,21 @@ Ig:</textarea>
                             
                             <div class="dentro" id="form-4" style="display: none;">
                                 <select name="pref" id="pref">
-                                    <option value="1">Hombres</option>
-                                    <option value="2">Mujeres</option>
-                                    <option value="3">Ambos</option>
+                                    <option value="1" <?php
+                                        if($pref=='Hombres'){
+                                            echo 'selected';
+                                        }
+                                    ?> >Hombres</option>
+                                    <option value="2" <?php
+                                        if($pref=='Mujeres'){
+                                            echo 'selected';
+                                        }
+                                    ?> >Mujeres</option>
+                                    <option value="3" <?php
+                                        if($pref=='Ambos'){
+                                            echo 'selected';
+                                        }
+                                    ?> >Ambos</option>
                                 </select>
                             </div>
                         </div>

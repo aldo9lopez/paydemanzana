@@ -56,4 +56,33 @@ body .main {
 .area .principal-info form label input {
   margin: 5px 5px;
 }
+
+.area .principal-info form input[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  font-size: 15px;
+  font-family: Proxima Nova Bold;
+  color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  background: #db4545;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 15px;
+}
+
+.area .principal-info form input[type="submit"]:hover {
+  background: #f8b1b1;
+  cursor: pointer;
+  color: #3a3a3a;
+}
+
+.area .principal-info form input[type="submit"]:focus {
+  -webkit-box-shadow: 0px 0px 8px #f8b1b1;
+          box-shadow: 0px 0px 8px #f8b1b1;
+}
 /*# sourceMappingURL=test.css.map */
