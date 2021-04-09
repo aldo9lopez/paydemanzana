@@ -9,8 +9,9 @@
             <p class="instrucciones"><b>¡Encuentra a tu media manzana!</b><br>Sigue estos sencillos pasos para que encuentres a tu pareja ideal, o al menos de los que estudian en el tec:</p>
             <p class="instrucciones-lista">
                 1. Pon una sexy foto de perfil, tu signo zodiacal y tus redes sociales<br>
-                2. Contesta cada test que aparece a continuación<br>
-                3. Da click en "Buscar mi media manzana"<br>
+                2. Selecciona el género de tu media manzana<br>
+                3. Contesta cada test que aparece a continuación<br>
+                4. Da click en "Buscar mi media manzana"<br>
             </p>
             <hr>
             <div class="foto-perfil">
@@ -150,19 +151,37 @@
                 <div class="test-corazon">
                     <img src="../images/media-manzana-test-corazon.PNG" alt="corazon" width="100px">
                     <span class="titulo-test"><b>Test del corazón</b></span>
-                    <a href="cuestionario?tipo=1">Tomar test</a>
+                    <a href="cuestionario?tipo=1"><?php
+                        if($mm_count_t1>0){
+                            echo 'Modificar test';
+                        }else{
+                            echo 'Tomar test';
+                        }
+                    ?></a>
                 </div>
 
                 <div class="test-mente">
                     <img src="../images/media-manzana-test-mente.png" alt="mente" width="100px">
                     <span class="titulo-test"><b>Test de la mente</b></span>
-                    <a href="cuestionario?tipo=2">Tomar test</a>
+                    <a href="cuestionario?tipo=2"><?php
+                        if($mm_count_t2>0){
+                            echo 'Modificar test';
+                        }else{
+                            echo 'Tomar test';
+                        }
+                    ?></a>
                 </div>
 
                 <div class="test-personal">
                     <img src="../images/media-manzana-test-personal.PNG" alt="personal" width="100px">
                     <span class="titulo-test"><b>Test personal</b></span>
-                    <a href="cuestionario?tipo=3">Tomar test</a>
+                    <a href="cuestionario?tipo=3"><?php
+                        if($mm_count_t3>0){
+                            echo 'Modificar test';
+                        }else{
+                            echo 'Tomar test';
+                        }
+                    ?></a>
                 </div>
             </div>
             <hr>

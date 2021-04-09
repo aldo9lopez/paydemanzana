@@ -267,4 +267,24 @@ body .main {
   background: #f8b1b1;
   color: #3a3a3a;
 }
+
+@media screen and (max-width: 1000px) {
+  .area .principal-info .instrucciones {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .area .principal-info .tests {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 30px auto;
+  }
+  .area .principal-info .tests div {
+    margin: 10px auto;
+  }
+}
 /*# sourceMappingURL=index.css.map */

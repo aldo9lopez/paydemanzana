@@ -23,4 +23,28 @@
 
     }
 
+    $query="SELECT COUNT(*) FROM mm_test1 WHERE Usuario=:usuario";
+    $resultado=$base->prepare($query);
+    $resultado->bindValue(":usuario",$usuario);
+    $resultado->execute();
+    $registro=$resultado->fetch((PDO::FETCH_ASSOC));
+
+    $mm_count_t1 = $registro["COUNT(*)"];
+
+    $query="SELECT COUNT(*) FROM mm_test2 WHERE Usuario=:usuario";
+    $resultado=$base->prepare($query);
+    $resultado->bindValue(":usuario",$usuario);
+    $resultado->execute();
+    $registro=$resultado->fetch((PDO::FETCH_ASSOC));
+
+    $mm_count_t2 = $registro["COUNT(*)"];
+
+    $query="SELECT COUNT(*) FROM mm_test3 WHERE Usuario=:usuario";
+    $resultado=$base->prepare($query);
+    $resultado->bindValue(":usuario",$usuario);
+    $resultado->execute();
+    $registro=$resultado->fetch((PDO::FETCH_ASSOC));
+
+    $mm_count_t3 = $registro["COUNT(*)"];
+
 ?>

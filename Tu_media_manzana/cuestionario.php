@@ -11,6 +11,9 @@
     }
 
     require("../model/usuario/ver_perfil.php");
+    require_once("../model/Tu_media_manzana/subir_test1.php");
+    require_once("../model/Tu_media_manzana/subir_test2.php");
+    require_once("../model/Tu_media_manzana/subir_test3.php");
     require_once("../model/Tu_media_manzana/ver_cuestionarios.php");
     $titulo= "$test_nombre| Pay de Manzana";
 
