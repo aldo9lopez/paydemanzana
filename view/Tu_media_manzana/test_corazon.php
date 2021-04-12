@@ -1,5 +1,5 @@
 <h3>Test del corazón</h3>
-<form action="" method="post">
+<form action="<?php echo (basename($_SERVER['PHP_SELF'], ".php")); ?>" method="post" id="formulario">
     <span class="pregunta">1. ¿Crees en el amor a primera vista?</span>
     <label><input type="radio" name="q1" id="q1-1" value="1" <?php if($res_q1== 1){ echo 'checked'; } ?> >Si</label>
     <label><input type="radio" name="q1" id="q1-2" value="2" <?php if($res_q1== 2){ echo 'checked'; } ?> >No</label>

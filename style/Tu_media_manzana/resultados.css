@@ -1,0 +1,117 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("font/ProximaNova-Regular.otf");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("font/Proxima Nova Bold.otf");
+}
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNova-Regular;
+  min-height: 100vh;
+}
+
+body .main {
+  min-height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.area .principal-info {
+  width: 100%;
+  padding: 10px 20px;
+  background: #FFFFFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.area .principal-info > div {
+  margin: 10px auto;
+  width: 80%;
+  border: 3px solid #db4545;
+  border-radius: 10px;
+}
+
+.area .principal-info > div .titulo {
+  background: #db4545;
+  width: 100%;
+  font-family: Proxima Nova Bold;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.area .principal-info > div .titulo span {
+  vertical-align: super;
+}
+
+.area .principal-info > div .info {
+  padding: 20px;
+}
+
+.area .principal-info > div .info > span {
+  display: block;
+}
+
+.area .principal-info > div .info .comp {
+  font-size: 18px;
+  color: #db4545;
+}
+
+.area .principal-info > div .info .comp .porcentaje {
+  font-size: 30px;
+  font-family: Proxima Nova Bold;
+}
+
+.area .principal-info > div .info .nombre {
+  margin: 5px;
+  font-size: 25px;
+}
+
+.area .principal-info > div .info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border: 5px solid #db4545;
+  margin: 10px auto 10px auto;
+}
+
+.area .principal-info > div .info .carrera {
+  margin: 10px auto 0px auto;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background: #db4545;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.area .principal-info > div .info .signo {
+  margin: 10px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.area .principal-info > div p {
+  padding: 10px;
+}
+/*# sourceMappingURL=resultados.css.map */

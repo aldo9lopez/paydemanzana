@@ -186,7 +186,17 @@
             </div>
             <hr>
             <div class="boton">
-                <a href="#">Buscar mi media manzana</a>
+            <?php
+                if($verificar_test==0){
+                    
+            ?>
+                <a href="resultados">Buscar mi media manzana</a>
+                <?php
+                    
+                }else{
+                    echo "<span>$leyenda</span>";
+                }
+                ?>
             </div>
         </div>
     </div>

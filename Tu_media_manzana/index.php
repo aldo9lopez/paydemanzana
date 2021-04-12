@@ -12,6 +12,7 @@
     }
 
     require_once("../model/Tu_media_manzana/actualizar_info.php");
+    require_once("../model/Tu_media_manzana/verificar_test.php");
     require("../model/usuario/ver_perfil.php");
     $titulo= "Tu media manzana | Pay de Manzana";
 
