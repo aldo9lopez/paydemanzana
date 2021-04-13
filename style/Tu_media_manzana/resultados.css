@@ -114,4 +114,10 @@ body .main {
 .area .principal-info > div p {
   padding: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+  .area .principal-info > img {
+    width: 250px;
+  }
+}
 /*# sourceMappingURL=resultados.css.map */

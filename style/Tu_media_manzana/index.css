@@ -269,6 +269,9 @@ body .main {
 }
 
 @media screen and (max-width: 1000px) {
+  .area .principal-info > img {
+    width: 250px;
+  }
   .area .principal-info .instrucciones {
     width: -webkit-fit-content;
     width: -moz-fit-content;
