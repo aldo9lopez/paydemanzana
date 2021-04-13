@@ -1,5 +1,5 @@
 <h3>Test del corazón</h3>
-<form action="<?php echo (basename($_SERVER['PHP_SELF'], ".php")); ?>" method="post" id="formulario">
+<form action="<?php echo (basename($_SERVER['PHP_SELF'], ".php")."?tipo=$test_tipo"); ?>" method="post" id="formulario">
     <span class="pregunta">1. ¿Crees en el amor a primera vista?</span>
     <label><input type="radio" name="q1" id="q1-1" value="1" <?php if($res_q1== 1){ echo 'checked'; } ?> >Si</label>
     <label><input type="radio" name="q1" id="q1-2" value="2" <?php if($res_q1== 2){ echo 'checked'; } ?> >No</label>
@@ -11,7 +11,7 @@
     <label><input type="radio" name="q2" id="q2-3" value="3" <?php if($res_q2== 3){ echo 'checked'; } ?> >Su sentido del humor</label>
     <label><input type="radio" name="q2" id="q2-4" value="4" <?php if($res_q2== 4){ echo 'checked'; } ?> >Su físico</label>
 
-    <span class="pregunta">3. ¿Practicarías la monogamia?</span>
+    <span class="pregunta">3. ¿Practicarías la "No monogamia"?</span>
     <label><input type="radio" name="q3" id="q3-1" value="1" <?php if($res_q3== 1){ echo 'checked'; } ?> >Sí</label>
     <label><input type="radio" name="q3" id="q3-2" value="2" <?php if($res_q3== 2){ echo 'checked'; } ?> >No</label>
     <label><input type="radio" name="q3" id="q3-3" value="3" <?php if($res_q3== 3){ echo 'checked'; } ?> >¿Qué es eso?</label>

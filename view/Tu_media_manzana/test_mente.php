@@ -1,5 +1,5 @@
 <h3>Test de la mente</h3>
-<form action="<?php echo (basename($_SERVER['PHP_SELF'], ".php")); ?>" method="post" id="formulario">
+<form action="<?php echo (basename($_SERVER['PHP_SELF'], ".php")."?tipo=$test_tipo"); ?>" method="post" id="formulario">
 
     <span class="pregunta">1. ¿Estás seguro/a de tus respuestas en el test anterior?</span>
     <label><input type="radio" name="q1" id="q1-1" value="1" <?php if($res_q1== 1){ echo 'checked'; } ?> >Claro que si</label>
