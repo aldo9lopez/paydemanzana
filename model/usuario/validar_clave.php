@@ -70,24 +70,6 @@ if(isset($_POST["enviar-correo"])){
 
         $mail = new PHPMailer(true);
 
-        $mail->SMTPDebug = 0;                      // Enable verbose debug output
-        $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'paydmanzana.com';                    // Set the SMTP server to send through
-        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'soporte@paydmanzana.com';                     // SMTP username
-        $mail->Password   = 'SDidko!mai_2ss';                               // SMTP password
-        $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-        $mail->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-
-            //Recipients
-        $mail->setFrom('soporte@paydmanzana.com', 'Equipo Pay de Manzana');
-        $mail->addAddress($correo,'Usuario');
-
-            // Content
-        $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Codigo de activacion para Pay de Manzana';
-        $mail->Body    = "Su código de verificación es: <b>$clave</b> <br>¡Gracias por usar Pay de Manzana!";
-
         $mail->send();
 
 
