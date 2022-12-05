@@ -1,6 +1,6 @@
 # Pay de manzana
-
-_Plataforma web estudiantil para calificar profesores y otras cosillas_
+## RIP Pay de manzana (Febrero 2021 - Febrero 2022)
+_Plataforma web estudiantil para calificar profesores y otras cosillas_ 
 
 ![paydmanzana](https://github.com/aldo9lopez/paydemanzana/blob/main/images/logo-rojo.png "OMG")
 
